@@ -1,0 +1,35 @@
+{% extends 'personal_blog/base.html' %}
+    {% block head %}
+<title>{{ post.title }}</title>
+    {% endblock head %}
+
+
+{% block body %}
+{#    {% autoescape off %}#}
+         {{ h2 | safe}}
+    {{ h2 }}
+{#    {% endautoescape %}#}
+    {{ html|safe }}
+    {% autoescape off %}
+        {{ html }}<br>
+        {{ h2|escape }}
+    {% endautoescape %}
+    <br>
+{{ post }}
+<ul>
+    {{ post2 }}
+    <li>{{ post.title }}</li>
+    <span>{{ post.content }}</span>
+    <li>{{ post.create_time }}</li>
+    <li>{{ post.modified_time }}</li>
+    <li>{{ post.category }}</li>
+    <li>{{ post.author }}</li>
+    <li>
+           {% for tag in post.tag.all %}
+             <span>{{ tag }}</span>
+    {% endfor %}
+    </li>
+
+</ul>
+    <a href="{% url 'edit' post.id %}">编辑</a>
+{% endblock body %}

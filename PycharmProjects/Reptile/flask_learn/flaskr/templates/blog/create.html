@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}New{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <form id="pCreate" method="post" action="{{ url_for('blog.create') }}" enctype="multipart/form-data" onsubmit="return checkCreate();">
+        <label for='title'>title</label>
+        <input type="text" id='title' name='title' value="{{ request.form['title'] }}" autocomplete="off" required>
+        <span class="title_error" style="color: red;"></span>
+        <label for='body'>Body</label>
+        <textarea id='body' name='body'>{{ request.form['body'] }}</textarea>
+        <span class="body_error" style="color: red;"></span>
+            <!-- <form method="post" action="{{ url_for('blog.upload') }}" enctype="multipart/form-data"> -->
+        <input type="file" size="30" name="file"/>
+            <!-- <br> -->
+            <!-- <input type="text" class="txt_input" name="name" style="margin-top:15px;"/> -->
+            <!-- <input type="submit" value="提交信息" class="button-new" style="margin-top:15px;"/> -->
+            <!-- </form> -->
+        <input type="submit" value='save'>
+    </form>
+
+    {% if is_upload %}
+            <h1>上传的图片</h1>
+            <img src="{{ url_for('static',filename='./img/'+filename) }}", width="300" height="300" alt="test">
+    {% endif %}
+
+    <script>
+        function check_title(){
+            var title = $('#title').val()
+            var bodty = $('#body').val()
+            var title_error = $('.title_error')
+            if (title.length == '' || title.length == undefined){
+                title_error.html('标题不能为空')
+                title_error.show()
+                return false
+            }
+            if (title.length > 20){
+                title_error.html('标题长度不能大于20')
+                title_error.show()
+                return false
+            }
+            else{
+                title_error.html('')
+                title_error.hide()
+                return true
+            }
+        }
+
+        function check_body(){
+            var title = $('#title').val()
+            var body = $('#body').val()
+            var body_error = $('.body_error')
+            if (body.length == '' || body.length == undefined){
+                body_error.html('内容不能为空')
+                body_error.show()
+                return false
+            }
+            if (body.length > 200){
+                body_error.html('内容长度不能大于20')
+                body_error.show()
+                return false
+            }
+            else{
+                body_error.html('')
+                body_error.hide()
+                return true
+            }
+        }
+        $('#title').blur(function(){
+            check_title()
+        })
+        $('#body').blur(function(){
+            check_body()
+        })
+
+        function checkCreate(){
+            if(check_title() && check_body()){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+
+    </script>
+{% endblock %}

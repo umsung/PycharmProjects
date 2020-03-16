@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<form method="post" action="/check_name/">
+    {% csrf_token %}
+
+    <label>账号: </label>
+    <input id="uname" name="uname">
+    <span calss="name_error" style="color: red"></span>
+    <br>
+    密码: <input type="password" id="upwd" name="upwd">
+    <span class="upwd_error" style="color: red"></span>
+    <br>
+    重复输入密码: <input type="password" id="spwd" name="spwd"/>
+    <span class="spid_error" style="color: red"></span>
+    <br>
+    <input type="checkbox" id="protocol" checked="checked"><span>同意用户协议</span>
+    <span class="protocol_error" style="color: red">请同意用户协议</span>
+    <br>
+    <input type="submit" value="注册">
+</form>
+</body>
+</html>

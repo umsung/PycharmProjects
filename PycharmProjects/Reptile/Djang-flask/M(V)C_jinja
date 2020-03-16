@@ -1,0 +1,56 @@
+
+
+宏：会返回一个 Jinja 模板或 HTML 字符串。其最主要的功能就是提高代码的重用性，我们可以将一个会被反复使用到的模板或 HTML 文件写成一个宏，然后就像调用函数一般，不断的被重用。
+
+定义宏
+{% macro input(name, label, value='', type='text')%}
+    <div class="form-group">
+        <label for"{{ name }}">{{ label }}</div>
+        <input type="{{ type }}" name="{{ name }}"
+            value="{{ value | escape }}" class="form-control">
+    </div>
+{% endmacro %}
+
+调用宏
+{{ input('name', 'Name') }}
+
+结果
+ <div class="form-group">
+        <label for"name">Name</div>
+        <input type="text" name="name"
+            value="" class="form-control">
+</div>
+
+
+
+过滤器
+inja 过滤器实质上是 Jinja 提供的内置函数或自定义函数，这些内置函数与 Python 函数的类型，可以接收参数并返回结果。
+常用于处理变量代码块中的变量。在变量代码块中使用管道符 | 来调用。
+
+
+Flask 的特殊变量和方法
+这些 Flask 特殊的变量和方法，都是可以在模板文件中直接访问的。
+
+config 对象
+config 对象就是 Flask 的 config 对象，也就是 app.config 对象，其包含了 class DevConfig 的属性。
+{{ config.SQLALCHEMY_DATABASE_URI }}
+
+request 对象
+就是 Flask 中表示当前请求的 request 对象。
+{{ request.url }}
+
+session 对象
+就是 Flask 的 session 对象。
+{{ session.new }}
+
+url_for 方法
+url_for() 会返回传入的路由函数对应的 URL，所谓的路由函数就是被 app.route() 路由装饰器装饰的函数。
+{{ url_for('post', post_id=1024) }}  
+
+
+get_flashed_messages 方法   
+返回之前在 Flask 中通过 flash() 传入的信息列表，类似实现一个队列。前提是该消息队列是由 flash() 来生成的。
+{% for message in get_flashed_messages() %}
+    {{ message }}
+{% endfor %}
+

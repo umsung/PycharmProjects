@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% block header %}
+
+  <h1>{% block title %}Register{% endblock %}</h1>
+ 
+{% endblock %}
+
+{% block content %}
+  <!-- <form id="register" method="post" action="{{ url_for('auth.register') }}" οnsubmit="return checkRegister()">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" required>
+    <span class="name_error" style="color: red;"></span>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <span class="upwd_error" style="color: red;"></span>
+    <input type="hidden" id="md5_password">
+    <input id="r_submit" type="submit" value="Register">
+  </form> -->
+  
+  <form  id="test" method="post" action="{{ url_for('auth.register') }}" onsubmit="return ss();">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" required>
+    <span class="name_error" style="color: red;"></span>
+    <label for="password">Password</label>
+    <input type="password"  id="password" required>
+    <span class="upwd_error" style="color: red;"></span>
+    <input type="hidden" id="md5_password" name="password">
+    <input id="aa" type="submit" value="Register">
+  </form>
+
+  
+  <script type="text/javascript">
+    // $(function(){
+      error_username = false;
+      error_password = false;
+      $('#test #username').blur(function(){
+          check_username()
+        });
+    
+      $('#test #password').blur(function(){
+        check_password()
+      });
+    
+      function check_username(){
+        var username = $.trim($('#test #username').val());
+        var password =$.trim($('#test #password').val());
+        var len_username = username.length;
+        var len_password = username.length;
+        var name_error = $('username').next();
+        // isNaN检验参数是否为非数字值
+        if(username=='' || username==undefined){
+          name_error.html('账号不能为空');
+          name_error.show();
+          error_username = false;
+          
+        }
+        if(isNaN(username) && len_username>=6){
+          $('#username').next().hide()
+
+          // $.post('/auth/check_name',{'username':username},function(data){
+          //   if(data.result){
+          //     error_username = true;
+          //     $('#username').next().hide() 
+          //   }
+          //   else{
+          //     $('#username').next().html('账号已存在')
+          //     $('#username').next().show() 
+          //     error_username = false
+          //   }
+          // })
+          // 执行ajax时return false的function 与onsubmit()不是同一个函数，所以无论return 什么都会直接执行submit()提交表单
+          $.ajax({
+            url:'/auth/check_name',
+            data:{'username':username},
+            type:"post",
+            async: false,
+            success: function(data){
+              if(data.result == '1'){
+                $('#test #username').next().html('账号已存在');
+                $('#test #username').next().show();
+                error_username = false;
+              }
+              else{
+                error_username = true;
+                $('#test #username').next().hide()
+                
+              }
+            }
+          }) //end ajax
+        }
+        else{
+          $('#test #username').next().html('账号不能为纯数字，不能小于6位数')
+          $('#test #username').next().show() 
+          error_username = false
+        }
+        
+      };
+    
+      function check_password(){
+        var password = $('#test #password').val();
+        var md5_pwd = $('#test #md5_password');
+        md5_pwd.val(hex_md5(password));
+        console.log(md5_pwd.val())
+        re = /^[a-zA-Z0-9]{6,18}$/;
+        if(re.test(password)){
+          $('#test #password').next().hide();
+          error_password=true;
+        }
+        else{
+          $('#test #password').next().html('密码不能小于6位')
+          $('#test #password').next().show();
+          error_password=false;
+        }
+      };
+      
+      // $('#aa').click(function(){
+      //   ss();
+      // }); 
+      
+      function ss(){
+          check_password()
+          check_username()
+          // return true
+          console.log(error_username,error_password)
+          if(error_username && error_password){
+            return true;
+          }
+          else{
+            return false;
+          }
+        }//end register
+    // })
+  </script>
+
+{% endblock %}

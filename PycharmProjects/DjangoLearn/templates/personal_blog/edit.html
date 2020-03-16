@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑</title>
+</head>
+<body>
+<form method="post" action="{%  url 'edit_action' id %}">
+
+    {% csrf_token %}
+    {% if post_list %}
+        <input type="hidden" name="id_hidden" value="{{ post_list.id }}">
+              <label>标题
+        <input type="text" name="t" value="{{ post_list.title }}">
+        </label>
+        <br>
+        <label>内容
+        <input type="text" name="content" value="{{ post_list.content }}">
+        </label>
+        <br>
+          <label>创建时间
+        <input type="text" name="ctime" value="{{ post_list.create_time }}">
+        </label>
+        <br>
+          <label>修改时间
+        <input type="text" name="mtime" value="{{ post_list.modified_time }}">
+        </label>
+        <br>
+          <label>类型
+        <input type="text" name="category" value="{{ post_list.category }}" readonly="readonly">
+        </label>
+        <br>
+          <label>作者
+        <input type="text" name="author" value="{{ post_list.author }}" readonly="readonly">
+        </label>
+        <br>
+{#        {% for tag in post_list.tag.all %}#}
+
+            <label>标签
+                <input type="text" name="tag" value="{{ a }}" readonly="readonly"/>
+            </label>
+{#        {% endfor %}#}
+        <br>
+        <input type="submit" value="提交">
+    {% else %}
+        <input type="hidden" name="id_hidden" value="0">
+        <label>标题
+        <input type="text" name="t">
+        </label>
+        <br>
+        <label>内容
+        <input type="text" name="content">
+        </label>
+        <br>
+
+        <input type="submit" value="提交">
+    {% endif %}
+</form>
+</body>
+</html>

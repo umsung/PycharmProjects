@@ -1,0 +1,111 @@
+{% extends "personal_blog/base.html" %}
+
+{% block head %}
+   <style>
+
+        .forFlow{
+            width: 1200px;
+            margin: 25px auto;
+        }
+        .dayTitle {
+        color: #fff;
+        background-color: #45bcf9;
+        padding: 6px 6px;
+        font-size: 12px;
+        display: block;
+        float: left;
+        margin-right: 10px;
+        }
+        .dayTitle a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .day .postTitle {
+            font-size: 21px;
+            line-height: 1.5em;
+            float: left;
+            clear: right;}
+        .day .postTitle a {
+            text-decoration: none;
+                color: #555;
+        }
+
+          .day .postTitle a:hover {
+                color: #0e90d2;
+                text-decoration: none;
+        }
+        .postCon {
+            font-family: 微软雅黑;
+            padding: 15px 0;
+            clear: both;
+        }
+        .postDesc {
+        clear: both;
+        color: #bcbcbc;
+        float: none;
+        text-align: left;
+        line-height: 200%;
+        font-size: 12px;
+}
+
+        .readmore {
+            color: #9ab26b;
+            text-decoration: none;
+
+        }
+
+
+    </style>
+
+{% endblock head %}
+
+{% block body %}
+{% for p in post_list %}
+
+<div class="forFlow">
+    <div class="day">
+        <div class="dayTitle">
+            <a>{{p.create_time}}</a>
+        </div>
+
+
+        <div class="postTitle">
+            <a class="" href="{% url 'detail' p.id %}">{{p.title}}</a>
+        </div>
+
+        <div class="postCon">
+            <img width="150px" height="200px" src="/static/media/{{ p.image }}">
+
+            <div class="c_b_p_desc">摘要: &nbsp;&nbsp;&nbsp;{{p.content|wordwrap:2}} { # |slice 过滤器，只取前100个字符 #}
+                <a href="{% url 'detail' p.id %}" class="readmore">阅读全文</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2018-01-06 19:51 地球守卫者 阅读(32) 评论(0)</div>
+
+    </div>
+
+</div>
+
+
+{%endfor%}
+<div>
+    <ul style="list-style-type:none">
+    <li>
+            {% if post_list.has_previous %}
+                <a href="/paginator/{{ post_list.previous_page_number }}/">上一页</a>
+            {% endif %}
+    {% for pag in post_list.paginator.page_range %}
+            {% if pag > post_list.number|add:-2 and pag < post_list.number|add:2 %}
+                    <a href="/paginator/{{ pag }}/">{{ pag }}</a>
+            {% endif %}
+    {% endfor %}
+            {% if post_list.has_next %}
+                <a href="/paginator/{{ post_list.next_page_number }}/">下一页</a>
+            {% endif %}
+    </li>
+    </ul>
+</div>
+{% endblock body %}

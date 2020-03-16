@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in  category%}
+    {% if i.id > 2 %}
+        <ul style="color: blue">{{ forloop.counter }}:{{ i.category_name }}</ul>
+    {% else %}
+        <ul style="color: red">{{ forloop.counter }}:{{ i.category_name }}</ul>
+    {% endif %}
+{% endfor %}
+
+{% comment %}
+sdsad
+{% endcomment %}
+</body>
+</html>

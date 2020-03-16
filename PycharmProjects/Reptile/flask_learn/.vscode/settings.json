@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "py3\\Scripts\\python.exe",
+    "files.associations": {
+        "*.vue": "vue"
+    },
+}

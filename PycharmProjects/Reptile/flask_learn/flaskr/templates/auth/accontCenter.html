@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Account Center{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <!-- <h><a href="{{ url_for('auth.accountCenterInfo') }}">修改密码</a></h> -->
+  <div class="u-col">
+    <div class="accountItm">
+      <a href="javascript:void(0)" dataname="data-changeP">修改密码</a>
+      <a class="curr" href="javascript:void(0)" dataname="data-info">基本资料</a>
+      <a href="javascript:void(0)" dataname="data-tx">别看</a>
+    </div>
+    <div id='data-changeP'>
+      <form id="upPwd" method="post" action="{{ url_for('auth.accountCenterInfo') }}" onsubmit="return checkRetPwd();">
+          <label for="OldPwd">OldPwd</label>
+          <input type="password"  id="OldPwd"  required>
+          <span class="Opwd_error" style="color: red;"></span>
+          <input type="hidden" id="md5_OldPwd" name="OldPwd">
+
+          <label for="NewPwd">NewPwd</label>
+          <input type="password"  id="NewPwd" required>
+          <span class="upwd_error" style="color: red;"></span>
+          <input type="hidden" id="md5_NewPwd" name="NewPwd">
+
+          <label for="rePwd">RePwd</label>
+          <input type="password"  id="rePwd" required>
+          <span class="rpwd_error" style="color: red;"></span>
+          <input type="hidden" id="md5_rePwd" name="rePwd">
+          <input type="submit" value="确定">
+      </form>
+    </div>
+
+    <script>
+        $('#OldPwd').blur(function(){
+            checkOldPwd()
+        })
+    
+        function checkOldPwd(){
+            var OldPwd = $.trim($('#OldPwd').val());
+            var md5_OldPwd = $('#md5_OldPwd')
+            md5_OldPwd.val(hex_md5(OldPwd))
+            var Opwd_error = $('.Opwd_error');
+            if (OldPwd.length == '' || OldPwd == undefined){
+              Opwd_error.html('原密码错误');
+              Opwd_error.show();
+              return false;
+            }
+            else{
+              Opwd_error.hide();
+              return true;
+            }
+        };
+    
+        $('#NewPwd').blur(function(){
+            checkNewPwd()
+        }) 
+    
+        function checkNewPwd(){
+            var NewPwd = $.trim($('#NewPwd').val());
+            var md5_NewPwd = $('#md5_NewPwd')
+            md5_NewPwd.val(hex_md5(NewPwd))
+            var upwd_error = $('.upwd_error');
+            re = /^[\@A-Za-z0-9\!\#\$\%\^\&\*\_\/\'\.\~]{6,18}$/;
+            if (!re.test(NewPwd)){
+              upwd_error.html('新密码需6-18位字符，区分大小写！');
+              upwd_error.show();
+              return false;
+            }
+            else{
+              upwd_error.hide();
+              return true;
+            }
+        };
+    
+        $('#rePwd').blur(function(){
+            checkRePwd()
+        })
+    
+        function checkRePwd(){
+          
+            var rePwd = $.trim($('#rePwd').val());
+            var md5_rePwd = $('#md5_rePwd')
+            md5_rePwd.val(hex_md5(rePwd))
+            var NewPwd = $.trim($('#NewPwd').val());
+            var rpwd_error = $('.rpwd_error')
+            re = /^[\@A-Za-z0-9\!\#\$\%\^\&\*\_\/\'\.\~]{6,18}$/;
+            if (!re.test(rePwd)){
+              rpwd_error.html('新密码需6-18位字符，区分大小写！');
+              rpwd_error.show();
+              return false;
+            }
+            if (rePwd != NewPwd){
+              rpwd_error.html('两次密码输入不一致');
+              rpwd_error.show();
+              return false;
+            }
+            else{
+              rpwd_error.hide();
+              return true;
+            }
+         
+        };
+        
+        function checkRetPwd(){
+          if(checkNewPwd() && checkOldPwd() && checkRePwd()){
+            return true;
+          }
+          else{
+            return false;
+          }
+        };
+    </script>
+
+
+    <div id="data-info" style="display: none">
+        <p>暂未开通, {{ g.user['username'] }}</p>
+    </div>
+
+    <div id="data-tx" style="display: none">
+        <p>傻逼！</p>
+    </div>
+
+  </div>
+
+  <script>
+    $('.accountItm a').click(function(){
+      $('.accountItm a').removeClass('curr')
+      $(this).addClass('curr')
+      $('#data-changeP').hide()
+      // $('#data-changeP').css('display','None')
+      $('#data-info').hide()
+      $('#data-tx').hide()
+      var dataname = $(this).attr('dataname')
+      $('#'+ dataname).show()
+    })
+  </script>
+{% endblock %}

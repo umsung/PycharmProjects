@@ -1,0 +1,24 @@
+     #navList {
+            width: 1200px;
+            margin: 0 auto;
+            height: 60px;
+            background-color: #169fe6;
+        }
+        #navList li {
+            float: left;
+            height: 60px;
+            line-height: 60px;
+            list-style-type: none;
+        }
+        #navList a {
+            padding: 0 20px;
+            font-size: 16px;
+            display: block;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            text-shadow: 3px 3px 3px #000;
+        }
+        #navList a:hover {
+            background: #fff;
+        }

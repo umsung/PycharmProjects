@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}detail{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div id='det-detail' pid="{{ post['id'] }}">
+        postid: {{ post['id'] }}<br>
+        author_id: {{ post['author_id'] }}<br>
+        title: {{ post['title'] }}<br>
+        username: {{ post.username }}<br>
+        content: {{ post.body }}<br>
+        created: {{ post.created }}<br>
+        updated: {{ post.updated }}<br>
+        {% if post['img'] %}
+            img: <img src="{{ url_for('static', filename=post['img']) }}" width="600" height="300" alt="test">
+        {% endif %}
+
+        {% if up and up.islike == '1'%}
+            <span class="tofavorite y" id="store" style="cursor:pointer;" onclick="clickshoucang()"><ins></ins>喜欢</span>
+        {% else %}
+            <span class="tofavorite fok" id="store" style="cursor:pointer;" onclick="clickshoucang()"><ins></ins>喜欢</span>
+        {% endif %}
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>评论</h1>
+    <form id="comment" method="POST">
+        <label for='title'>标题:</label>
+        <input type="text" id='title' name='title' value="" autocomplete="off" required>
+        <label for='body'>内容:</label>
+        <textarea id='body' name='body'></textarea>
+        <span class="body_error" style="color: red;"></span>
+        <input  type="submit" value="提交">
+    </form>
+
+    {% if commentDatas %}
+        {% for comment in commentDatas %}
+            <div class="cmt-item">
+                <div class="cmt-user">
+                    <a href="/person/personal.html?page=1&id=101" target="_blank">
+                        <span class="user-img-s" style="background-image:url('/resimg.html?type=1&name=head1011519379918467.jpg')"></span>
+                    </a>
+                </div>
+                <div class="comment">
+                    <div class="cmt-hd">
+                        <div align="left" style="float:left">
+                            <a href="/person/personal.html?page=1&id=101" target="_blank">
+                                <span class="user-normal">{{ comment['username'] }}</span>
+                            </a>
+                            <span class="cmt-title" m="0">&nbsp;&nbsp;&nbsp;&nbsp;{{ comment['ctitle'] }}</span>
+                            <span class="date_diff time" m="0">&nbsp;&nbsp;&nbsp;&nbsp;{{ formTime(comment['comment_time']) }}</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="link" onclick="replyContent(this, event)" rId="904" fId="905" tId="905" lev="1" tUser="{{ comment['username'] }}">回复</a>
+                        </div>
+                        <div align="right">
+                            {% if comment['author_id'] == g.user['id']  %}
+                                <a class='dlink'  dataname="{{ comment['id'] }}"  href="javascript:void(0)">Delete</a>
+                            {% else %}
+                                <br>
+                            {% endif %}
+                        </div>
+                <!-- <div class="tags">
+                    <span class="stat-good " onclick="commentLike(this, event)" cId="905" p="3" ><em>0</em></span>
+                </div>  -->
+                    </div>
+                   
+                <!-- <div class="cmt-content" id="content_905"> -->
+                <div class="cmt-detail"><p>&nbsp;&nbsp;{{ comment['content'] }}</p></div>
+                
+                            <!-- 二级评论  -->	                						                						                						               		
+                        
+                        
+                </div>
+      
+            </div>
+            {% if not loop.last %}
+            <hr>
+            <!-- loop.last 是一个 Jinja for 循环 内部可用的特殊变量，它用于在每个 博客帖子后面显示一条线来分隔帖子，最后一个帖子除外。 -->
+            {% endif %}
+        {% endfor %}	
+    {% endif %}
+
+    <script>
+        $('a.dlink').click(function(){
+            var commentid= this.getAttribute('dataname');
+            // $(this).attr('dataname')
+            var cmt = $(this).parents('div.cmt-item')
+            if (commentid){
+                $.ajax({
+                    url:'/'+commentid+'/deleteCommentApi',
+                    data:{'md5_id':hex_md5(commentid)},
+                    type:'post',
+                    success:function(data){
+                        if(data.result == 'true'){
+                            cmt.hide()
+                            cmt.next().hide()
+                        // alert(data.msg)
+                        // window.location.reload();
+                        }
+                        if(data.result == 'false'){
+                            alert(data.msg)
+                        }
+                        if(data.ErrorInfo == 'nologin'){
+                            window.location.href = "http://127.0.0.1:5000/auth/login?returnurl=" + encodeURIComponent(window.location.href);
+                        }
+                        
+                    },
+                    error:function(data){
+                        alert('未知错误!')
+                    }
+                })
+            }
+        });
+        
+
+        function clickshoucang(){
+                var pid = $('#det-detail').attr('pid')
+                $.ajax({
+                    url:'/detail/likeSign',
+                    data:{'pid':pid},
+                    type:'post',
+                    success:function(data){
+                        if(data.result){
+                            if(data.state == 'signed'){
+                                $('#store').attr('class','tofavorite fok')
+                                // alert(data.msg)
+                            }
+                            if(data.state == 'unsign'){
+                                $('#store').attr('class','tofavorite y')
+                                // alert(data.msg)
+                            }
+                        }
+                        else if(data.ErrorInfo == "nologin"){
+                            window.location.href = "http://127.0.0.1:5000/auth/login?returnurl=" + encodeURIComponent(window.location.href);
+
+                        }
+                        else{
+                            alert(data.msg)
+                        }
+                    },
+                    error:function(data){
+                        alert(data.msg)
+                    }
+                })
+            }
+    
+    </script>
+{% endblock %}

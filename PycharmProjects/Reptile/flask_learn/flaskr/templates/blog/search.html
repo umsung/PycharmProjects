@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}Index{% endblock %}</h1>
+    <a href={{ url_for('blog.create') }}>New</a>
+
+    <div>
+        <form method="GET">
+            <div>
+                <input type="text" name='key' value='' width="1000px">
+                <input type="submit" value="搜索" >
+            </div>
+        </form>
+    </div>
+    <!-- {% if g.user %} -->
+        <!-- <a href={{ url_for('blog.create') }}>New</a> -->
+    <!-- {% endif %} -->
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <article class='post'>
+            <header>
+                <div>
+                    <h1>{{ post[0] }}、<a href="{{ url_for('blog.detail', id=post[1]['id']) }}">{{ post[1]['title'] }}</a></h1>
+                    <div class='about'>by {{ post[1]['username'] }} on {{ post[1]['created'].strftime('%Y-%m-%d %H:%M:%S')}}</div>
+                </div>
+            {% if post[1]['author_id'] == g.user['id'] %}
+                <a class='action' href="{{ url_for('blog.update', id=post[1]['id']) }}">Edit</a>
+                <br>
+                <a class='action' href="#">Delete</a>
+            {% endif %}
+            </header>
+            <p class='body'>{{ post[1]['body'] }}</p>
+            {% if post[1]['img'] %}
+                <img src="{{ url_for('static', filename=post[1]['img']) }}" width="300" height="300" alt="test">
+            {% endif %}
+            
+        </article>
+        {% if not loop.last %}
+            <hr>
+        <!-- loop.last 是一个 Jinja for 循环 内部可用的特殊变量，它用于在每个 博客帖子后面显示一条线来分隔帖子，最后一个帖子除外。 -->
+        {% endif %}
+    {% endfor %}
+    {% if page_id %}
+        <a href="{{ url_for('blog.index1',page_id=1) }}">首页</a>
+        {% if page_id >1 %}
+            <a href="{{ url_for('blog.index1', page_id=page_id-1) }}">上一页</a>
+        {% else %}
+            <a href="javascript:alert('第一页');">上一页</a>
+        {% endif %}
+
+        {% if posts_len%3 ==0 %}
+            {% for index in range(1,posts_len//3+1) %}
+                {% if index < page_id+2 and index > page_id-2 %}
+                    <a href="{{ url_for('blog.index1',page_id=index) }}">{{ index }}</a>
+                {% endif %}
+            {% endfor %} 
+        {% else %}
+            {% for index in range(1,posts_len//3+2) %}
+                {% if index < page_id+2 and index > page_id-2 %}
+                    <a href="{{ url_for('blog.index1',page_id=index) }}">{{ index }}</a>
+                {% endif %}
+            {% endfor %} 
+        {% endif %}
+
+        {% if (posts_len%3 !=0 and page_id < posts_len//3+1) or (posts_len%3 ==0 and page_id < posts_len//3) %}
+            <a href="{{ url_for('blog.index1', page_id=page_id+1) }}">下一页</a>
+        {% else %}
+            <a href="javascript:alert('最后一页');">下一页</a>
+        {% endif %}
+
+        {% if posts_len%3 ==0 %}
+            <a href="{{ url_for('blog.index1',page_id=posts_len//3) }}">尾页</a>
+        {% else %}
+            <a href="{{ url_for('blog.index1',page_id=posts_len//3+1) }}">尾页</a>
+        {% endif %}
+
+        {% if posts_len%3 ==0 %}
+            <a href="javascript:void(0);">共{{ posts_len//3 }}页</a>
+        {% else %}
+            <a href="javascript:void(0);">共{{ posts_len//3+1 }}页</a>
+        {% endif %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,1 @@
+from jmilkfansblog import create_app

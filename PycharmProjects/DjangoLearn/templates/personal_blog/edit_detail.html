@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{%  url 'edit_action' %}">
+
+    {% csrf_token %}
+    <label>标题
+    <input type="text" name="t" value="{{ post_list.title }}">
+    </label>
+    <br>
+    <label>内容
+    <input type="text" name="content" value="{{ post_list.content }}">
+    </label>
+    <br>
+      <label>创建时间
+    <input type="text" name="ctime" value="{{ post_list.create_time }}">
+    </label>
+    <br>
+      <label>修改时间
+    <input type="text" name="mtime" value="{{ post_list.modified_time }}">
+    </label>
+    <br>
+      <label>类型
+    <input type="text" name="category" value="{{ post_list.category }}">
+    </label>
+    <br>
+      <label>作者
+    <input type="text" name="author" value="{{ post_list.author }}">
+    </label>
+    <br>
+
+    <input type="submit" value="提交">
+</body>
+</html>

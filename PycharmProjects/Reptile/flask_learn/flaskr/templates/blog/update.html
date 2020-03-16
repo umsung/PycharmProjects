@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}{{ post['title'] }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form  id="pUpdate" method="post" enctype="multipart/form-data" onsubmit="return checkUpdate();">
+        <label for='title'>Title</label>
+        <input type="text" id='title' name='title' value="{{ post['title'] }}" autocomplete="off" required>
+        <span class="title_error" style="color: red;"></span>
+        <label for='body'>Body</label>
+        <textarea id='body' name='body'>{{ post['body'] }}</textarea>
+        <span class="body_error" style="color: red;"></span>
+        {% if post['img'] %}
+            <img src="{{ url_for('static', filename=post['img']) }}" width="600" height="300" alt="test">
+        {% endif %}
+        <br>
+        <input type="file" name='file' size="30">
+        <br>
+        <input id="pupdate" type="submit" value='Save'>
+    </form>
+    <form action="{{ url_for('blog.delete', id=post['id']) }}" method="post">
+        <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you Sure?');">
+    </form>
+
+    <script>
+        function check_title(){
+            var title = $('#title').val()
+            var bodty = $('#body').val()
+            var title_error = $('.title_error')
+            if (title.length == '' || title.length == undefined){
+                title_error.html('标题不能为空')
+                title_error.show()
+                return false
+            }
+            if (title.length > 20){
+                title_error.html('标题长度不能大于20')
+                title_error.show()
+                return false
+            }
+            else{
+                title_error.html('')
+                title_error.hide()
+                return true
+            }
+        }
+
+        function check_body(){
+            var title = $('#title').val()
+            var body = $('#body').val()
+            var body_error = $('.body_error')
+            if (body.length == '' || body.length == undefined){
+                body_error.html('正文内容不能为空')
+                body_error.show()
+                return false
+            }
+            if (body.length > 200){
+                body_error.html('标正文内容长度不能大于20')
+                body_error.show()
+                return false
+            }
+            else{
+                body_error.html('')
+                body_error.hide()
+                return true
+            }
+        }
+        $('#title').blur(function(){
+            check_title()
+        })
+        $('#body').blur(function(){
+            check_body()
+        })
+
+        function checkUpdate(){
+            if(check_title() && check_body()){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+
+    </script>
+{% endblock %}

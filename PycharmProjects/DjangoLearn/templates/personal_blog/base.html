@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父模板</title>
+{#    <style>#}
+{#     #navList {#}
+{#            width: 1200px;#}
+{#            margin: 0 auto;#}
+{#            height: 60px;#}
+{#            background-color: #169fe6;#}
+{#        }#}
+{#        #navList li {#}
+{#            float: left;#}
+{#            height: 60px;#}
+{#            line-height: 60px;#}
+{#            list-style-type: none;#}
+{#        }#}
+{#        #navList a {#}
+{#            padding: 0 20px;#}
+{#            font-size: 16px;#}
+{#            display: block;#}
+{#            cursor: pointer;#}
+{#            text-decoration: none;#}
+{#            color: #fff;#}
+{#            text-shadow: 3px 3px 3px #000;#}
+{#        }#}
+{#        #navList a:hover {#}
+{#            background: #fff;#}
+{#        }#}
+{#</style>#}
+{#    html文件引用#}
+    <link href="/static/css/index.css" rel="stylesheet" type="text/css">
+
+{#    js文件引用#}
+    <script src="/static/javascript/jquery.js" type="text/javascript"></script>
+    {% block head %}
+        父模板中预留区域，可以编写默认内容，
+        如果子模板中重写了内容将被覆盖掉，如果子模板没有填充内容将使用父模板中编写的默认内容。
+    {% endblock head %}
+</head>
+<body>
+<ul id="navList">
+{#    <li><img src="/static/img/cover_small.jpg">图片</li>#}
+    <li><a href="/index/1/">首页</a></li>
+    <li><a href="#"></a>联系</li>
+    <li><a href="#"></a>关于</li>
+    <li><a href="/admin/">管理</a></li>
+
+</ul>
+    {% block body %}
+
+    {% endblock body %}
+
+
+</body>
+</html>

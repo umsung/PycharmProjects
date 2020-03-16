@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}Index{% endblock %}</h1>
+
+    <div id="f" style="margin:0 auto;">
+        <div align="left" style="float:left">
+            <form method="GET" action="{{ url_for('blog.index1',page_id=1) }}">
+                <div style="display:block; margin-left:auto;margin-right:auto;">
+                    <input id="search-inp" type="text" name='key' placeholder="请输入关键字" autocomplete="off" maxlength="50" value="{{ session['pageindex'] }}" style="width:300px; height:25px;" >
+                    <input id= "search-bt" type="submit" value="搜索" style="height:30px; font-size:0.9em;font-family: serif;" >
+                    <!-- <input type='reset' value='重置' style="height:30px; font-size:0.9em;font-family: serif;"> -->
+                </div>
+            </form>
+            <div class="search-down" id="gov_search_suggest" style="display:none;">
+                <ul></ul>
+
+                <script>
+                    $('#search-inp').bind("keyup blur",function(){
+                        var inp = $('#search-inp').val();
+                        var dul = $('#gov_search_suggest')
+                        var ul = $('#gov_search_suggest ul')
+                        if (inp){
+                            if($('#gov_search_suggest ul li').length < 5){
+                                var ps = document.createElement('li')
+                                ps.innerHTML = '<span>'+inp+'</span>'
+                                ul.append(ps)
+                                dul.css('display','block')
+                            }   
+                        }
+                        else{
+                            dul.css('display','none')
+                            $('#gov_search_suggest ul li').remove()
+                        }
+                    })
+                    
+                
+                </script>
+            </div>
+        </div>
+        <div align="right">
+            <form method="GET" action="{{ url_for('blog.index1') }}">
+                <input id="reset" type="submit" value="重置" style="height:30px; font-size:0.9em;font-family: serif;">
+            </form>
+        </div>
+        <div align="right">
+            <h1 style="height:30px; font-size:1.2em;font-family: serif;">共{{ posts_len }}数据</h1>
+            <input id='hiddenpid' type="hidden" value="{{ page_id }}">
+        </div>
+    </div>
+    
+    <a href={{ url_for('blog.create') }}>New</a>
+    <!-- {% if g.user %} -->
+        <!-- <a href={{ url_for('blog.create') }}>New</a> -->
+    <!-- {% endif %} -->
+    
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <article class='post'>
+            <header>
+                <div>
+                    <h1 id="pTitle">{{ post[0] }}、<a href="{{ url_for('blog.detail', id=post[1]['id']) }}">{{ post[1]['title'] | truncate(10, True) }}</a></h1>
+                    <!-- <div class='about'>by {{ post[1]['username'] }} on {{ post[1]['created'].strftime('%Y-%m-%d %H:%M:%S')}}</div> -->
+                </div>
+            {% if post[1]['author_id'] == g.user['id'] %}
+                <a class='action' href="{{ url_for('blog.update', id=post[1]['id']) }}">Edit</a>
+                <br>
+                <a class='taction' dataname="{{ post[1]['id'] }}" href="javascript:void(0)">Delete</a>
+                <input id='hiddenid' type="hidden" value="{{ post[1]['id'] }}">
+            {% endif %}
+            </header>
+            <p class='body'>&ensp;&ensp;{{ post[1]['body'] |truncate(10, True)  }}
+            </p>
+            {% if post[1]['img'] %}
+                <img src="{{ url_for('static', filename=post[1]['img']) }}" width="300" height="300" alt="test">
+            {% endif %}
+            <div class='about'>by @{{ post[1]['username'] }} on {{ post[1]['created'].strftime('%Y-%m-%d %H:%M:%S')}}   地球守卫者   阅读({{  post[1]['click'] }})   评论({{ post[1]['num'] }})</div>
+        </article>
+        {% if not loop.last %}
+            <hr>
+        <!-- loop.last 是一个 Jinja for 循环 内部可用的特殊变量，它用于在每个 博客帖子后面显示一条线来分隔帖子，最后一个帖子除外。 -->
+        {% endif %}
+    {% endfor %}
+    <br>
+    <br>
+    {% if not pageindex %}
+        <a href="{{ url_for('blog.index1',page_id=1) }}">首页</a>
+        {% if page_id >1 %}
+            <a href="{{ url_for('blog.index1', page_id=page_id-1) }}">上一页</a>
+        {% else %}
+            <a href="javascript:alert('第一页');">上一页</a>
+        {% endif %}
+
+        {% if posts_len%3 ==0 %}
+            {% for index in range(1,posts_len//3+1) %}
+                {% if index < page_id+2 and index > page_id-2 %}
+                    <a href="{{ url_for('blog.index1',page_id=index) }}">{{ index }}</a>
+                {% endif %}
+            {% endfor %} 
+        {% else %}
+            {% for index in range(1,posts_len//3+2) %}
+                {% if index < page_id+2 and index > page_id-2 %}
+                    <a href="{{ url_for('blog.index1',page_id=index) }}">{{ index }}</a>
+                {% endif %}
+            {% endfor %} 
+        {% endif %}
+
+        {% if (posts_len%3 !=0 and page_id < posts_len//3+1) or (posts_len%3 ==0 and page_id < posts_len//3) %}
+            <a href="{{ url_for('blog.index1', page_id=page_id+1) }}">下一页</a>
+        {% else %}
+            <a href="javascript:alert('最后一页');">下一页</a>
+        {% endif %}
+
+        {% if posts_len !=0 and posts_len%3 ==0 %}
+            <a href="{{ url_for('blog.index1',page_id=posts_len//3) }}">尾页</a>
+        {% else %}
+            <a href="{{ url_for('blog.index1',page_id=posts_len//3+1) }}">尾页</a>
+        {% endif %}
+
+        {% if posts_len%3 ==0 %}
+            <a href="javascript:void(0);">共{{ posts_len//3 }}页</a>
+        {% else %}
+            <a href="javascript:void(0);">共{{ posts_len//3+1 }}页</a>
+        {% endif %}
+    {% else %}
+        <a href="{{ url_for('blog.index1',page_id=1,key=pageindex) }}">首页</a>
+        {% if page_id >1 %}
+            <a href="{{ url_for('blog.index1', page_id=page_id-1,key=pageindex) }}">上一页</a>
+        {% else %}
+            <a href="javascript:alert('第一页');">上一页</a>
+        {% endif %}
+
+        {% if posts_len%3 ==0 %}
+            {% for index in range(1,posts_len//3+1) %}
+                {% if index < page_id+2 and index > page_id-2 %}
+                    <a href="{{ url_for('blog.index1',page_id=index,key=pageindex) }}">{{ index }}</a>
+                {% endif %}
+            {% endfor %} 
+        {% else %}
+            {% for index in range(1,posts_len//3+2) %}
+                {% if index < page_id+2 and index > page_id-2 %}
+                    <a href="{{ url_for('blog.index1',page_id=index,key=pageindex) }}">{{ index }}</a>
+                {% endif %}
+            {% endfor %} 
+        {% endif %}
+
+        {% if (posts_len%3 !=0 and page_id < posts_len//3+1) or (posts_len%3 ==0 and page_id < posts_len//3) %}
+            <a href="{{ url_for('blog.index1', page_id=page_id+1,key=pageindex) }}">下一页</a>
+        {% else %}
+            <a href="javascript:alert('最后一页');">下一页</a>
+        {% endif %}
+
+        {% if posts_len !=0 and posts_len%3 ==0 %}
+            <a href="{{ url_for('blog.index1',page_id=posts_len//3,key=pageindex) }}">尾页</a>
+        {% else %}
+            <a href="{{ url_for('blog.index1',page_id=posts_len//3+1,key=pageindex) }}">尾页</a>
+        {% endif %}
+
+        {% if posts_len%3 ==0 %}
+            <a href="javascript:void(0);">共{{ posts_len//3 }}页</a>
+        {% else %}
+            <a href="javascript:void(0);">共{{ posts_len//3+1 }}页</a>
+        {% endif %}
+    {% endif %}
+{% endblock %}

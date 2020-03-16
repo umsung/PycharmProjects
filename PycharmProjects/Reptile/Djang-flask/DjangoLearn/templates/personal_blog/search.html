@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/search/">
+    {% csrf_token %}
+
+    <input type="text" name="p" />
+    <input type="submit" value="提交">
+    <br>
+    {% if a %}
+        <p>{{ a }}</p>
+    {% endif %}
+</form>
+</body>
+</html>
