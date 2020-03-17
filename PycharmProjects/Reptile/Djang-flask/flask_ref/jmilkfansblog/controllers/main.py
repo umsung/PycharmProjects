@@ -14,9 +14,9 @@ ad = Blueprint(
     url_prefix='/main')
 
 
-@ad.route('/')
-def home():
-    return render_template('home.html')
+# @ad.route('/')
+# def home():
+#     return render_template('home.html')
 
 
 @ad.route('/register',methods=['GET','POST'])

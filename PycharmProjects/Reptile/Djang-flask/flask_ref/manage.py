@@ -24,9 +24,12 @@ manager.add_command("db", MigrateCommand)
 # # db.create_all(app=app)
 
 # python manage.py db init：初始化一个迁移脚本的环境，只需要执行一次。
-# python manage.py db migrate`：将模型生成迁移文件，只要模型更改了，就需要执行一遍这个命令。
+# python manage.py db migrate`：将模型生成迁移文件，只要模型更改了，就需要执行一遍这个命令。该指令会让 Alembic 扫描所有的 SQLAlchemy 对象，并将没有记录过的行和列记录成为一个 python 文件并保存到 migrations/versions 路径下。
 # python manage.py db upgrade`：将迁移文件真正的映射到数据库中。每次运行了`migrate`命令后，就要运行这个命令
-
+# python manage.py runserver: 启动flask服务
+# python manage.py shell: 打开shell环境
+# python manage.py db history # 获取 History ID
+# python manage.py db downgrade <history_id> # python manage.py db downgrade <history_id>
 
 @manager.shell
 def make_shell_context():

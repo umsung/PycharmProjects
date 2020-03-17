@@ -83,6 +83,7 @@ def post(post_id):
 
 
 @bp.route('/new',methods=['GET','POST'])
+@login_required
 def new_post():
     form = PostForm()
     if not current_user:

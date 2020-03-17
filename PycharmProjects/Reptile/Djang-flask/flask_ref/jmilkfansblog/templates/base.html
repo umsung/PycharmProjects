@@ -38,10 +38,16 @@
           {% endif %}
         {% endfor %}
         <li>
+          {% if pagination.has_next %}
           <a href="{{ url_for('blog.home', page=pagination.next().page )
             }}" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
+          {% else %}
+          <a href="{{ url_for('blog.home', page=pagination.page )}}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+          {% endif %}
         <li>
       </ul>
     </nav>
@@ -56,7 +62,14 @@
       <!-- Replace the route function to URL: `/` -->
       <h1><a href="{{ url_for('blog.home')}} ">JmilkFan's Blog</a></h1>
         <p>Welcome to the blog!</p>
+          {% if current_user %} 
+            {{ current_user.username }} <a href="{{ url_for('main.logout') }}" >退出</a>
+          {% else %}
+            <a href="{{ url_for('main.login') }}" >登录</a>
+            <a href="{{ url_for('main.register') }}" >注册</a>
+          {% endif %}
     </div>
+    
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
         {% for category, message in messages %}

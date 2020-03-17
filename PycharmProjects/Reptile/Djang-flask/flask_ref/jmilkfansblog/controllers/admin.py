@@ -13,11 +13,12 @@ from flask_login import current_user,login_required
 class CustomView(BaseView):
 
     @expose('/')    
-    @admin_permission.require(http_exception=403)
     def index(self):
         return self.render('admin/custom.html')
 
     @expose('/second_page')
+    @login_required
+    @admin_permission.require(http_exception=403)
     def second_page(self):
         return self.render('admin/second_page.html')
 
