@@ -11,6 +11,8 @@ from werkzeug.contrib.cache import MemcachedCache
 from werkzeug.contrib.cache import SimpleCache
 from functools import wraps
 from flaskr import cache
+from datetime import timedelta
+
 # from flask.ext.cache import Cache
 # 验证蓝图
 # 把相关视图和代码注册到蓝图，然后再把蓝图注册到工厂函数的实例中
@@ -76,13 +78,15 @@ def login():
             # session.clear() # 防止在登陆状态下，再去登陆其他账号，导致session有多个账号信息
             session.pop('user_id',None)
             session['user_id'] = db.cursor().execute('select id from user where username=?' ,(username,)).fetchone()[0]
+            session.permanent = True
+            permanent_session_lifetime = timedelta(minutes=1)  # 设置session到期时间
             # print("sessionid", session['user_id'])
             # res = session.get('redirect')
-            # if res:
-            #     return redirect(res)
+            # if res: 
+            #     return redirect(res) 
             if session.get('returnurl'):  
                 return redirect(session.get('returnurl'))
-            return redirect(url_for('blog.index'))
+            return redirect(url_for('blog.index1'))
         else:
             flash(error)
             # 如果验证失败，那么会向用户显示一个出错信息。 flash() 用于储存在渲染模块时可以调用的信息。

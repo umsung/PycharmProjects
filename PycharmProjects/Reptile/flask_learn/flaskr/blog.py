@@ -230,14 +230,14 @@ def update(id):
             error = 'Body is required'
         if len(title) > 20:
             error = 'Title length can not more than 20'
-        if len(body) > 200:
-            error = 'Title length can not more than 200'
+        if len(body) > 20000:
+            error = 'Title length can not more than 20000'
         if error is not None:
             flash(error)
         else:
             if sys_img_path:
                 f.save(sys_img_path)
-            db.execute('update post set title=?,body=?,img=? where id=?',(title,body,db_img_path,id))
+            db.execute('update post set title=?,body=?,img=?,updated=? where id=?',(title,body,db_img_path,datetime.now().strftime('%Y-%m-%d %H:%M:%S'),id))
             db.commit()
             if len(limit_post) % 3 == 0:
                 return redirect(url_for('blog.index1',page_id=len(limit_post)/3))
@@ -324,7 +324,7 @@ def detail(id):
         if g.user == None:
             session['redirect'] = request.referrer
             # print(request.referrer)
-            return redirect(url_for('auth.login'))
+            return redirect(url_for('auth.login',returnurl=request.url))
         title = request.form['title']
         content = request.form['body']
         error =None

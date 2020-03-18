@@ -10,7 +10,7 @@
         <input type="text" id='title' name='title' value="{{ post['title'] }}" autocomplete="off" required>
         <span class="title_error" style="color: red;"></span>
         <label for='body'>Body</label>
-        <textarea id='body' name='body'>{{ post['body'] }}</textarea>
+        <textarea id='editor' name='body'>{{ post['body'] }}</textarea>
         <span class="body_error" style="color: red;"></span>
         {% if post['img'] %}
             <img src="{{ url_for('static', filename=post['img']) }}" width="600" height="300" alt="test">
@@ -48,15 +48,15 @@
 
         function check_body(){
             var title = $('#title').val()
-            var body = $('#body').val()
+            var body = $('#editor').val()
             var body_error = $('.body_error')
             if (body.length == '' || body.length == undefined){
                 body_error.html('正文内容不能为空')
                 body_error.show()
                 return false
             }
-            if (body.length > 200){
-                body_error.html('标正文内容长度不能大于20')
+            if (body.length > 20000){
+                body_error.html('标正文内容长度不能大于20000')
                 body_error.show()
                 return false
             }
@@ -83,4 +83,11 @@
         }
 
     </script>
+{% endblock %}
+
+{% block js %}
+<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('editor');
+</script>
 {% endblock %}

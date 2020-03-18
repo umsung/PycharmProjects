@@ -71,12 +71,12 @@
                 <input id='hiddenid' type="hidden" value="{{ post[1]['id'] }}">
             {% endif %}
             </header>
-            <p class='body'>&ensp;&ensp;{{ post[1]['body'] |truncate(10, True)  }}
+            <p class='body'>&ensp;&ensp;{{ post[1]['body']|safe  }}
             </p>
             {% if post[1]['img'] %}
                 <img src="{{ url_for('static', filename=post[1]['img']) }}" width="300" height="300" alt="test">
             {% endif %}
-            <div class='about'>by @{{ post[1]['username'] }} on {{ post[1]['created'].strftime('%Y-%m-%d %H:%M:%S')}}   地球守卫者   阅读({{  post[1]['click'] }})   评论({{ post[1]['num'] }})</div>
+            <div class='about'>by @{{ post[1]['username'] }} on {{ post[1]['created']}}   地球守卫者   阅读({{  post[1]['click'] }})   评论({{ post[1]['num'] }})</div>
         </article>
         {% if not loop.last %}
             <hr>

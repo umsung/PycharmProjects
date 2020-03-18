@@ -10,8 +10,8 @@
         <label for='title'>title</label>
         <input type="text" id='title' name='title' value="{{ request.form['title'] }}" autocomplete="off" required>
         <span class="title_error" style="color: red;"></span>
-        <label for='body'>Body</label>
-        <textarea id='body' name='body'>{{ request.form['body'] }}</textarea>
+        <label for='editor'>Body</label>
+        <textarea id='editor' name='body'>{{ request.form['body'] }}</textarea>
         <span class="body_error" style="color: red;"></span>
             <!-- <form method="post" action="{{ url_for('blog.upload') }}" enctype="multipart/form-data"> -->
         <input type="file" size="30" name="file"/>
@@ -30,7 +30,7 @@
     <script>
         function check_title(){
             var title = $('#title').val()
-            var bodty = $('#body').val()
+            var bodty = $('#editor').val()
             var title_error = $('.title_error')
             if (title.length == '' || title.length == undefined){
                 title_error.html('标题不能为空')
@@ -86,4 +86,11 @@
         }
 
     </script>
+{% endblock %}
+
+{% block js %}
+<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('editor');
+</script>
 {% endblock %}

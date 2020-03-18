@@ -10,7 +10,7 @@
         author_id: {{ post['author_id'] }}<br>
         title: {{ post['title'] }}<br>
         username: {{ post.username }}<br>
-        content: {{ post.body }}<br>
+        content: {{ post.body|safe }}<br>
         created: {{ post.created }}<br>
         updated: {{ post.updated }}<br>
         {% if post['img'] %}
