@@ -13,7 +13,7 @@ def starfix(data, old, new):
 
 df1 = DataFrame({'keys': ['a', 'b', 'c', 'd', 0, 8], 'data': range(6)})
 print(df1)
-print(df1.loc[1])
+print(df1.loc[2][0])
 print(df1.iloc[1])
 print(df1.index)
 print(df1.columns)

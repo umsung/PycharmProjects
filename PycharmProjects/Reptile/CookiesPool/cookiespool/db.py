@@ -81,26 +81,27 @@ class CookiesRedisClient(RedisClient):
         :param name: 名称, 一般为站点名, 如 weibo, 默认 default
         """
         RedisClient.__init__(self, host, port, password)
+        # 重写父类构造方法并继承原有的熟悉，也可使用super().__init__(host,port,password),不需要传到self
         self.domain = domain
         self.name = name
 
     def set(self, key, value):
         try:
             self._db.set(self._key(key), value)
-        except:
+        except SetCookieError:
             raise SetCookieError
 
     def get(self, key):
         try:
             return self._db.get(self._key(key)).decode('utf-8')
-        except:
-            return None
+        except GetCookieError:
+            return GetCookieError
 
     def delete(self, key):
         try:
             print('Delete', key)
             return self._db.delete(self._key(key))
-        except:
+        except DeleteCookieError:
             raise DeleteCookieError
 
     def random(self):
@@ -111,7 +112,7 @@ class CookiesRedisClient(RedisClient):
         try:
             keys = self.keys()
             return self._db.get(random.choice(keys))
-        except:
+        except GetRandomCookieError:
             raise GetRandomCookieError
 
     def all(self):
@@ -150,13 +151,13 @@ class AccountRedisClient(RedisClient):
     def set(self, key, value):
         try:
             self._db.set(self._key(key), value)
-        except:
+        except SetAccountError:
             raise SetAccountError
 
     def get(self, key):
         try:
             return self._db.get(self._key(key)).decode('utf-8')
-        except:
+        except GetAccountError:
             raise GetAccountError
 
     def all(self):
@@ -185,7 +186,7 @@ class AccountRedisClient(RedisClient):
         """
         try:
             return self._db.delete(self._key(key))
-        except:
+        except DeleteAccountError:
             raise DeleteAccountError
 
 

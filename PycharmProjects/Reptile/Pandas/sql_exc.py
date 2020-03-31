@@ -18,7 +18,7 @@ class SqlExc(object):
 
     def getDataAndColumn(self):
         datas = self.cur.excute(self.sql1).fetchall()
-        fields = self.cur.excute(self.sql2).description
+        fields = self.cur.excute(self.sql2).description()
         return datas,fields
 
     def get_excel(self,datas,fields,filePath):
@@ -34,7 +34,7 @@ class SqlExc(object):
 
         for row in range(1,len(datas)+1):
             for col in range(len(fields)):
-                sheet.cell(row=row+1,column=col,value=datas[row-1][col])
+                sheet.cell(row=row+1,column=col+1,value=datas[row-1][col])
         newWorkbook = new.save(filePath)
         return newWorkbook
 

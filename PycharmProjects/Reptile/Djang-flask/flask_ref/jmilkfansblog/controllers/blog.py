@@ -108,7 +108,7 @@ def edit_post(id):
     """View function for edit_post."""
 
     post = Post.query.get_or_404(id)
-
+    form = PostForm()
     # Ensure the user logged in.
     if not current_user:
         return redirect(url_for('main.login'))
@@ -122,7 +122,7 @@ def edit_post(id):
     # Admin can be edit the post.
     permission = Permission(UserNeed(post.users.id))
     if permission.can() or admin_permission.can():
-        form = PostForm()
+        
 
         #   if current_user != post.users:
         #    abort(403)

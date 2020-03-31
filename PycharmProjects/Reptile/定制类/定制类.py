@@ -17,13 +17,13 @@ class Fib(object):
         self.a, self.b = 0, 1
 
     def __iter__(self):
-        return self # 实例本身就是迭代对象，故返回自己
+        return self  # 实例本身就是迭代对象，故返回自己
 
     def __next__(self):
-        self.a, self.b = self.b, self.a + self.b # 计算下一个值
-        if self.a > 100000: # 退出循环的条件
+        self.a, self.b = self.b, self.a + self.b  # 计算下一个值
+        if self.a > 100000:  # 退出循环的条件
             raise StopIteration()
-        return self.a # 返回下一个值
+        return self.a  # 返回下一个值
 
 # __getattr__ 调用类的方法或属性时，如果不存在，就会报错,要避免这个错误,是写一个__getattr__()方法,动态返回一个属性
 
@@ -63,5 +63,7 @@ class Student3(object):
 
 
 if __name__ == "__main__":
-    s = Student2('duan')
-    s()
+    s = Student2()
+    print(s.age())
+    s.score
+   

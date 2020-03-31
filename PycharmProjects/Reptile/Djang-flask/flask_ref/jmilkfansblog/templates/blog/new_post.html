@@ -1,8 +1,10 @@
+{% extends "base.html" %}
 {% block title %}New Post{% endblock %}
 
 {% block body %}
 <div class="row">
   <h1 class="text-center">Create A New Post</h1>
+  <br>
   <form method="POST" action="{{ url_for('blog.new_post') }}">
     {{ form.hidden_tag() }}
     <div class="form-group">

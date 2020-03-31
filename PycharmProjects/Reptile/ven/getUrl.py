@@ -23,16 +23,18 @@ headers = {
   }
 
 def get_page_index(pageNo):
-    pyload = {
-        "isSort": "1",
-        "pageNo": pageNo,
-        "pageSize": "10",
-              }
-
-    url = 'http://dyjy.dtdjzx.gov.cn/course/special/findAll'
+    pyload ={'classificationId': "",
+            'pageNo': pageNo,
+            'pageSize': 10,
+            'scope': 0,
+            'title': "",
+            'type': "",
+            'userId': ""
+            }
+    url = 'http://dyjy.dtdjzx.gov.cn/api/course/special/findByCondition'
     resp = requests.post(url, data=json.dumps(pyload), headers=headers)
     resp.encoding = 'utf-8'
-    # print(resp.text.encode('GBK','ignore').decode('GBk'))
+    print(resp.text.encode('GBK','ignore').decode('GBk'))
     return resp.text
 
 
@@ -72,6 +74,37 @@ def get_page_detail(specialId):
         print("error occur")
         return None
 
+def req(pyload):
+    try:
+        resp = requests.post('http://dyjy.dtdjzx.gov.cn/course/special/findCourseBySpecialId', headers=headers, data=json.dumps(pyload))
+        resp.encoding = 'utf-8'
+        if resp.status_code == 200:
+            # print(resp.text)
+            results = resp.text
+            results = json.loads(results)
+            a = []
+
+            if 'data' in results.keys():
+                for data in results['data']:
+                    b = {}
+                    b['courseId'] = data['courseId']
+                    b['courseName'] = data['courseName']
+                    courseId = data['courseId']
+                    courseName = data['courseName']
+                    url = 'http://dyjy.dtdjzx.gov.cn/resourcedetailed/' + str(courseId)
+                    # print("是否都走这里")
+                    # print('url:', url, courseName)
+                    a.append([url, courseName])
+                    # save_to_mongodb(b)
+                save_data_pd(a)
+
+            return None
+    except ConnectionError:
+        print("error occur")
+        return None
+    except JSONDecodeError:
+        print('JSONDecodeError')
+
 
 def parse_page_detail(count, specialId):
 
@@ -85,37 +118,8 @@ def parse_page_detail(count, specialId):
             "pageSize": "6",
             "specialId": specialId,
         }
-
-        try:
-            resp = requests.post('http://dyjy.dtdjzx.gov.cn/course/special/findCourseBySpecialId', headers=headers,
-                                 data=json.dumps(pyload))
-            resp.encoding = 'utf-8'
-            if resp.status_code == 200:
-                # print(resp.text)
-                results = resp.text
-                results = json.loads(results)
-                a = []
-
-                if 'data' in results.keys():
-                    for data in results['data']:
-                        b = {}
-                        b['courseId'] = data['courseId']
-                        b['courseName'] = data['courseName']
-                        courseId = data['courseId']
-                        courseName = data['courseName']
-                        url = 'http://dyjy.dtdjzx.gov.cn/resourcedetailed/' + str(courseId)
-                        # print("是否都走这里")
-                        # print('url:', url, courseName)
-                        a.append([url, courseName])
-                        save_to_mongodb(b)
-                # save_data_pd(a)
-
-            return None
-        except ConnectionError:
-            print("error occur")
-            return None
-        except JSONDecodeError:
-            print('JSONDecodeError')
+        req(pyload)
+        
 
     elif count > 6 and count % 6 == 0:
         pageNo = int(count / 6)
@@ -128,36 +132,7 @@ def parse_page_detail(count, specialId):
                 "pageSize": "6",
                 "specialId": specialId,
             }
-            try:
-                resp = requests.post('http://dyjy.dtdjzx.gov.cn/course/special/findCourseBySpecialId', headers=headers,
-                                     data=json.dumps(pyload))
-                resp.encoding = 'utf-8'
-                a = []
-
-                if resp.status_code == 200:
-                    # print(resp.text)
-                    results = resp.text
-                    results = json.loads(results)
-                    if 'data' in results.keys():
-                        for data in results['data']:
-                            if 'courseId' and 'courseName' in data:
-                                b = {}
-                                b['courseId'] = data['courseId']
-                                b['courseName'] = data['courseName']
-                                courseId = data['courseId']
-                                courseName = data['courseName']
-                                url = 'http://dyjy.dtdjzx.gov.cn/resourcedetailed/' + str(courseId)
-                                # print("是否都走这里第二")
-                                # print('url:', url, courseName)
-                                a.append([url, courseName])
-                                save_to_mongodb(b)
-                        # save_data_pd(a)
-                # return None
-            except ConnectionError:
-                print("error occur")
-                # return None
-            except JSONDecodeError:
-                print('JSONDecodeError')
+            req(pyload)
     else:
         pageNo = int(count//6) + 1
         print('pageNo:', pageNo)
@@ -168,36 +143,9 @@ def parse_page_detail(count, specialId):
                 "pageSize": "6",
                 "specialId": specialId,
             }
+            req(pyload)
 
-            try:
-                resp = requests.post('http://dyjy.dtdjzx.gov.cn/course/special/findCourseBySpecialId', headers=headers,
-                                     data=json.dumps(pyload))
-                resp.encoding = 'utf-8'
-                if resp.status_code == 200:
-                    # print(resp.text)
-                    results = resp.text
-                    results = json.loads(results)
-                    a = []
 
-                    if 'data' in results.keys():
-                        for data in results['data']:
-                            b = {}
-                            b['courseId'] = data['courseId']
-                            b['courseName'] = data['courseName']
-                            courseId = data['courseId']
-                            courseName = data['courseName']
-                            url = 'http://dyjy.dtdjzx.gov.cn/resourcedetailed/' + str(courseId)
-                            # print("是否都走这里第三")
-                            # print('url:', url, courseName)
-                            a.append([url, courseName])
-                            save_to_mongodb(b)
-                        # save_data_pd(a)
-                # return None
-            except ConnectionError:
-                print("error occur")
-                # return None
-            except JSONDecodeError:
-                print('JSONDecodeError')
 
 def save_data_csv():
     f = open('连接.csv', 'a', encoding='utf-8', newline='')
@@ -206,7 +154,7 @@ def save_data_csv():
 
 def save_data_pd(data):
     data = pd.DataFrame(data,columns = ['url','name'])
-    data.to_csv('视频url.csv', encoding='utf-8', index=0, mode='a+', header=False)
+    data.to_csv('E:/gitL/视频url.csv', encoding='utf-8', index=0, mode='a+', header=False)
 
 def save_data_json(data):
     f = open('json.csv', 'w', encoding='utf-8')
@@ -248,6 +196,7 @@ def main(num):
     print('process name %d' % num)
     html = get_page_index(num)
     for id in parse_page_index(html):
+        print(id)
         count = get_page_detail(id)
         parse_page_detail(count, id)
 
@@ -260,9 +209,11 @@ def test_process(start_num, end_num):
             parse_page_detail(count, id)
 
 if __name__ == '__main__':
-    p = Pool(3)
-    p.map(main,[num for num in range(1,10)])
+    # p = Pool(3)
+    # p.map(main,[num for num in range(1,10)])
 
+    for i in range(3):
+        get_page_index(i)
     # 进程池
     # for num in range(1,10):
     #     p.apply_async(main, args=(num,))
@@ -270,12 +221,12 @@ if __name__ == '__main__':
     # p.join()
     
     # 单个进程开
-    p1 = Process(test_process,args=(1,35))
-    p2 = Process(test_process,args=(36,70))
-    p3 = Process(test_process,args=(71,101))
+    # p1 = Process(test_process,args=(1,35))
+    # p2 = Process(test_process,args=(36,70))
+    # p3 = Process(test_process,args=(71,101))
 
-    for p in [p1,p2,p3]:
-        p.start()
-    p1.join()
-    p2.join()
-    p3.join()
+    # for p in [p1,p2,p3]:
+    #     p.start()
+    # p1.join()
+    # p2.join()
+    # p3.join()

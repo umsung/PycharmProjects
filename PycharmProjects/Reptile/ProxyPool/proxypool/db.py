@@ -14,7 +14,7 @@ class RedisClient(object):
         """
         get proxies from redis  取出count个proxy以列表形式返回，相当于从redis中剪切出来
         """
-        proxies = self._db.lrange("proxies", 0, count - 1) # lrange 只返回指定区间的元素
+        proxies = self._db.lrange("proxies", 0, count - 1)  # lrange 只返回指定区间的元素
         self._db.ltrim("proxies", count, -1)  # ltrim 返回指定区间的元素，不在范围内的将被移除redis
         return proxies
 
@@ -22,7 +22,7 @@ class RedisClient(object):
         """
         add proxy to right top
         """
-        self._db.rpush("proxies", proxy) # rpush将value插入列表proxies的尾部
+        self._db.rpush("proxies", proxy)  # rpush将value插入列表proxies的尾部
 
     def pop(self):
         """

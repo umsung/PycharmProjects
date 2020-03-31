@@ -1,7 +1,7 @@
 class CookiePoolError(Exception):
     def __str__(self):
         return repr('Cookie Pool Error')
-
+    __repr__ = __str__
 
 class SetCookieError(CookiePoolError):
     def __str__(self):
