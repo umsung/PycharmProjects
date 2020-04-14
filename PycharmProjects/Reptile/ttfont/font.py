@@ -8,7 +8,7 @@ from lxml import etree
 #     f.write()
 
 # baseFonts = TTFont('basefont.woff')
-baseFonts = TTFont('E:/Pscrapy/PycharmProjects/Reptile/ven/font.woff')
+baseFonts = TTFont('E:/GITL/PycharmProjects/Reptile/ven/test.ttf')
 baseFonts.saveXML('E:/Pscrapy/PycharmProjects/Reptile/ven/font.xml')
 
 

@@ -52,6 +52,9 @@ class CookiesMiddleWare(object):
         return cls(
             cookies_pool_url=crawler.settings.get('COOKIES_POOL_URL')
         )
+        # cookies_pool_url=crawler.settings.get('COOKIES_POOL_URL')
+        # return cls(cookies_pool_url)
+
 
     # 此方法是处理response响应
     def process_response(self, request, response, spider):

@@ -75,78 +75,80 @@ class KuaishouSpider(scrapy.Spider):
             print(fans)
             print(follower)
             print(prod)
-            item['fans'] = []
-            item['prod'] = []
-            item['follower'] = []
-            if fans != '':
-                if '.' in fans:
-                    fans = re.sub('\.', '.;', fans)
-                    fans = fans.split(';')
-                    for f in fans:
-                        if f != '':
-                            if f == '.' or f == 'w':
-                                item['fans'].append(f)
-                            else:
-                                 item['fans'].append(jiemi(online_font, base_font, f, dict_font))
-                else:
-                    fans = fans.split(';')
-                    for f in fans:
-                        if f != '':
-                            if f == '.' or f == 'w':
-                                item['fans'].append(f)
-                            else:
-                                item['fans'].append(jiemi(online_font, base_font, f, dict_font))
-                item['fans'] = ''.join(item['fans'])
-
-            if follower != '':
-                if '.' in follower:
-                    follower = re.sub('\.', '.;', follower)
-                    follower = follower.split(';')
-                    for f in follower:
-                        if f != '':
-                            if f == '.' or f == 'w':
-                                item['follower'].append(f)
-                            else:
-                                item['follower'].append(jiemi(online_font, base_font, f, dict_font))
-                else:
-                    follower = follower.split(';')
-                    for f in follower:
-                        if f != '':
-                            if f == '.' or f == 'w':
-                                item['follower'].append(f)
-                            else:
-                                item['follower'].append(jiemi(online_font, base_font, f, dict_font))
-                item['follower'] = ''.join(item['follower'])
-
-            if prod != '':
-                if '.' in prod:
-                    prod = re.sub('\.', '.;', prod)
-                    prod = prod.split(';')
-                    for f in prod:
-                        if f != '':
-                            if f == '.' or f == 'w':
-                                item['prod'].append(f)
-                            else:
-                                item['prod'].append(jiemi(online_font, base_font, f, dict_font))
-                else:
-                    prod = prod.split(';')
-                    for f in prod:
-                        if f != '':
-                            if f == '.' or f == 'w':
-                                item['prod'].append(f)
-                            else:
-                                item['prod'].append(jiemi(online_font, base_font, f, dict_font))
-                item['prod'] = ''.join(item['prod'])
-
+            item['fans'] = jiemiStr(online_font,base_font,fans)
+            item['prod'] = jiemiStr(online_font,base_font,prod)
+            item['follower'] = jiemiStr(online_font,base_font,follower)
             yield item
 
 
+def newMapDict(online_font,base_font,code):
+     '''
+        根据每个加密编码，单个解密
+    '''
+    dict_font = {'uniAACB': '4', 'uniABCD': '3', 'uniACDD': '0', 'uniAEFB': '8', 'uniAFBC': '6',
+                    'uniBBCA': '1', 'uniBDCA': '5', 'uniBFEE': '9', 'uniCCAC': '2', 'uniCFBA': '7'}
+    temp={}
+    list_base_uni = base_font.getGlyphOrder()[1:]
+    one_online_uni = online_font.getBestCmap()[int(code)]
+    one_online_obj = online_font['glyf'][one_online_uni]
+    for one_base_uni in list_base_uni:
+        if base_font['glyf'][one_online_uni] == one_online_obj:
+            return dict_font[one_base_uni]
+
+
+def jiemiStr(online_font,base_font,jiami_str):
+    item=[]
+    if  jiami_str != '':
+        if '.' in jiami_str:
+            jiami_str = re.sub('\.', '.;', jiami_str)
+            jiami_str = jiami_str.split(';')
+            for f in jiami_str:
+                if f != '':
+                    if f == '.' or f == 'w':
+                        item.append(f)
+                    else:
+                        item.append(newMapDict(online_font,base_font,f))
+        else:
+            jiami_str = jiami_str.split(';')
+            for f in jiami_str:
+                if f != '':
+                    if f == '.' or f == 'w':
+                        item.append(f)
+                    else:
+                        item.append(newMapDict(online_font,base_font,f))
+    item = ''.join(item)
+    return item
+
+
 def jiemi(online_font, base_font, f, dict_font):
+    # 通过2进制code码拿到对应键名
     on_uni = online_font.getBestCmap()[int(f)]
+    # 通过键名拿到字体形状
     on_obj = online_font['glyf'][on_uni]
     for bs_uni in base_font.getGlyphOrder():
         if base_font['glyf'][bs_uni] == on_obj:
             return dict_font[bs_uni]
+
+
+def jiemiStr2(online_font,base_font,jiami_text):
+    '''
+        先构造出网页加密的编码和正确字符的映射关系，再整体替换
+    '''
+
+    temp ={}
+    dict_font = {'uniAACB': '4', 'uniABCD': '3', 'uniACDD': '0', 'uniAEFB': '8', 'uniAFBC': '6',
+                    'uniBBCA': '1', 'uniBDCA': '5', 'uniBFEE': '9', 'uniCCAC': '2', 'uniCFBA': '7'}
+    online_uni_list = online_font.getGlyphOrder()[1:]
+    base_uni_list = base_font.getGlyphOrder()[1:]
+    for online_uni in online_uni_list:
+        online_obj = online_font['glyf'][online_uni]
+        for base_uni in base_uni_list:
+            base_obj = base_font['glyf'][base_uni]
+            if online_obj == base_obj:
+                temp['&#x'+online_uni[3:].lower()+';'] = dict_font[base_uni]
+    for k,v in temp.items():
+        jiami_text = re.sub(k,v,jiami_text)
+    return jiami_text
 
 # # 解析字体库
 # temp = {}

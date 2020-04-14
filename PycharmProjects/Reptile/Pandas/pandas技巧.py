@@ -219,8 +219,8 @@ df.drop_duplicates()
 # df.sort_values(by='地址') 指定列排序
 # df.sort_values(by='1'，axis=1) 指定行排序，与删除相反
 
-# fillna能够使用指定的方法填充NA/NaN值。。（空值是” “， 缺失值是NAN）
-
+# fillna能够使用指定的方法填充NA/NaN值。。（空值是” “,空值是有值的，值为空， 缺失值是NAN，缺失项没有值）
+# df.isnull()和df.isna()
 a = np.arange(100,dtype=float).reshape((10,10))
 for i in range(len(a)):
     a[i,:i] = np.nan
@@ -284,3 +284,27 @@ daterng = pd.Series(pd.date_range('2017', periods=9, freq='Q'))
 daterng.dt.day_name()    #  返回日期所属星期
 daterng[daterng.dt.quarter > 2]     #  返回日期所属季度
 daterng[daterng.dt.is_year_end]     #  判断日期是否属于年低
+
+
+
+#联合查询
+a=df.loc[df.Pclass.isin([1,2]) & (df.Age<=30)]
+#中位数
+df.Age.median()
+#平均值
+df.Age.mean()
+#查看该列包含种类（相当于set操作）
+df.Pclass.unique()
+#统计该列各个种类的数量（统计set后各元素出现的次数）
+df.groupby('Pclass').size()# 结果按索引排序
+df.Pclass.value_counts()# 这种方式更好，结果是按值排序的
+#票价与年龄的比例，求比例最大的行号
+idx=(df.Fare/df.Age).idxmax()
+#查看此人是否存活
+df.loc[idx,'Survived']
+# 统计指定列为NaN的行数
+df[df.Embarked.isna()]
+# 统计指定列某条件下的行数
+(df['Age']<50).sum()
+# 统计所有Ticket中出现PC的次数
+df.Ticket.map(lambda ticket:'PC' in ticket).sum()

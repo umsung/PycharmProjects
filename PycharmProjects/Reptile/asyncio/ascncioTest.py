@@ -3,11 +3,12 @@ import asyncio
 async def do_some_work(x):
     print('waiting',str(x))
     await asyncio.sleep(2)
-
+# 协程本质是个单进程
 # async def语句定义的函数为协程函数，调用协程函数，协程并不会开始运行，只是返回一个协程对象
 # 让这个协程对象运行的话，有两种方式：
-# 在另一个已经运行的协程中用 await 等待它
-# 通过 ensure_future 函数计划它的执行
+# 在另一个已经运行的协程中用 await 等待它，await可将耗时等待的操作挂起，让出控制权，去执行其他程序
+# 耗时等待一般是IO操作，如文件读取（磁盘IO）、网咯请求（网络IO），await后接协程对象或者可返回协程对象的生成器
+# 通过 ensure_future 函数计划它的执行，future是任务执行的结果
 # 简单来说，只有 loop 运行了，协程才可能运行。
 # 下面先拿到当前线程缺省的 loop ，然后把协程对象交给 loop.run_until_complete，协程对象随后会在 loop 里得到运行。
 loop = asyncio.get_event_loop()

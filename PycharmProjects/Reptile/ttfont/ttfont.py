@@ -35,26 +35,26 @@ def main():
     base64_str=re.search(r"base64,(.*?)'\)",response_, re.S).group(1)
     # print(base64_str)
     b = base64.b64decode(base64_str)
-    print(b.decode('UTF-8'))
+    # print(b.decode('UTF-8'))
     print(io.BytesIO(b))
     # BytesIO实现了在内存中读写bytes
     font = TTFont(io.BytesIO(b))
     print(font)
     bestcmap = font['cmap'].getBestCmap()
     print(bestcmap)
-    newmap  = dict()
-    for key in bestcmap.keys():
-        value = int(re.search(r'(\d+)', bestcmap[key]).group(1))-1
-        print(value) 
-        key = hex(key) 
-        print(key)
-        newmap[key] = value 
-#把页面上自定义字体替换成正常字体
-    for key,value in newmap.items():
-        key_ = key.replace('0x','&#x') + ';'
-        if key_ in response_:
-            response_ = response_.replace(key_,str(value))
-    # Get_info(response_)
+#     newmap  = dict()
+#     for key in bestcmap.keys():
+#         value = int(re.search(r'(\d+)', bestcmap[key]).group(1))-1
+#         print(value) 
+#         key = hex(key) 
+#         print(key)
+#         newmap[key] = value 
+# #把页面上自定义字体替换成正常字体
+#     for key,value in newmap.items():
+#         key_ = key.replace('0x','&#x') + ';'
+#         if key_ in response_:
+#             response_ = response_.replace(key_,str(value))
+    Get_info(response_)
 
 if __name__ == "__main__":
     main()
