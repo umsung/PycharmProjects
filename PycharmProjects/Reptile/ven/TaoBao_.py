@@ -17,8 +17,11 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 # broswer = webdriver.Chrome(desired_capabilities=dcap)
 
 
-#这种更好
-# option = webdriver.ChromeOptions()
+# 这种更好
+option = webdriver.ChromeOptions()
+option.add_experimental_option('excludeSwitches', ['enable-automation'])
+# option.add_experimental_option('excludeSwitches', ['enable-logging'])
+# 为Chrome开启实验性功能参数excludeSwitches,避免监测，淘宝等网站的 window.navigator.webdriver的值为undefined。而使用selenium访问则该值为true
 # # chrome_options = Options()
 # 无头模式启动
 # option.add_argument('--headless')
@@ -37,13 +40,14 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 
-broswer = webdriver.Chrome()
+broswer = webdriver.Chrome(options=option)
 wait = WebDriverWait(broswer, 15)
 
 
 def search():
     try:
         broswer.get('https://www.taobao.com/')
+        # sprint(window.navigator.webdriver)
         # print(broswer.get_cookies())
         # broswer.delete_all_cookies()
         #
@@ -71,14 +75,13 @@ def next_page(page_num):
         submit.click()
         wait.until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, '#mainsrp-pager > div > div > div > ul > li.item.active > span'), str(page_num)))
         print('正在下载第{}页'.format(page_num))
-        parse_page_index()
-        for i in parse_page_index():
+        datas = parse_page_index()
+        for i in datas:
             print(i)
             download_img(i[0], i[5])
             sav_data().writerow(i)
     except TimeoutError:
         next_page(page_num)
-
 
 def parse_page_index():
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#mainsrp-itemlist .items .item')))

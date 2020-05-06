@@ -177,6 +177,25 @@ class WeatherSpiderDownloaderMidderware(object):
             return HtmlResponse(url=request.url,body=html,encoding='utf-8',request=request)
         return None
 
+    # 参数介绍：
+    # 拦截到响应对象（下载器传递给Spider的响应对象）
+    # request：响应对象对应的请求对象
+    # response：拦截到的响应对象
+    # spider：爬虫文件中对应的爬虫类的实例
+    def process_response(self, request, response, spider):
+        # 响应对象中存储页面数据的篡改
+        if request.url in['http://news.163.com/domestic/','http://news.163.com/world/','http://news.163.com/air/','http://war.163.com/']:
+            spider.bro.get(url=request.url)
+            js = 'window.scrollTo(0,document.body.scrollHeight)'
+            spider.bro.execute_script(js)
+            time.sleep(2)  # 一定要给与浏览器一定的缓冲加载数据的时间
+            #  页面数据就是包含了动态加载出来的新闻数据对应的页面数据
+            page_text = spider.bro.page_source   # spider是爬虫实例，bro是spider的属性，重写构造函数中定义
+            #篡改响应对象
+            return HtmlResponse(url=spider.bro.current_url,body=page_text,encoding='utf-8',request=request)
+        else:
+            return response
+
 class QuotetutorailSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the

@@ -16,7 +16,7 @@ async def get(url):
     await response.text()
     await session.close()
     print('Get response from',url,'response',response)
-    return response
+    # return response
 
 async def request(url):
     print('waiting for',url)
@@ -25,16 +25,31 @@ async def request(url):
 
 async def with_get(url):
     print('waiting for',url)
+    sem = asyncio.Semaphore(5)  # 限制携程并发量
     timeout = aiohttp.ClientTimeout(total=15)   # 定义超时时间为1s
-    async with aiohttp.ClientSession(timeout=timeout) as session:
-        async with session.get(url) as response:
-            print(response.status)
-            # print('Get response from',url,'response',response)
+    async with sem: 
+        try:
+            # session = aiohttp.ClientSession()
+            async with aiohttp.ClientSession(timeout=timeout) as session:
+                async with session.get(url) as response:
+                    # response = await session.get(url)
+                    await response.text()
+                    # await session.close()
+                    print(response.status)
+                    # print('body',await response.text())
+                    # print('byte',await response.read())
+                    # print('json',await response.json())
+                    # print('Get response from',url,'response',response)
+        except aiohttp.ClientError:
+            print('error occurred while runing',url)
 
-loop = asyncio.get_event_loop()
-tasks = [asyncio.ensure_future(with_get(url.format(num=i))) for i in range(1,21)]
-loop.run_until_complete(asyncio.wait(tasks))
+if __name__ == "__main__":
+    
+    loop = asyncio.get_event_loop()
+    tasks = [asyncio.ensure_future(with_get(url.format(num=i))) for i in range(1,21)]
+    loop.run_until_complete(asyncio.wait(tasks))
+    # loop.run_until_complete(asyncio.gather(*tasks))
 
-end = time.time()
+    end = time.time()
 
-print('Cost time',end-start)
+    print('Cost time',end-start)

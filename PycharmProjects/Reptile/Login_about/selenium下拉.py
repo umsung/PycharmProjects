@@ -29,3 +29,5 @@ def seleniumScrollDown():
 
     # 每次滚动 1/10,“window.scrollTo”为向下滑动的命令，
     # “document.body.clientHeight”为整个窗口的高度，“h=(i/10)”为每次滑动的高度。
+    #  window.scrollTo(0,documnet.body.clientHeight)滑动到底部
+    #  window.scrollTo(0,0)滑动到顶部
