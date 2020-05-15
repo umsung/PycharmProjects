@@ -93,7 +93,7 @@ def main():
             i = i.replace('"', '')
             x, y = get_x(i, css_text)
             # 数字进行预处理
-            x = int(float(x)) + 6
+            x = int(float(x)) + 6 if x%2 ==0 else int(float(x)) + 7
             y = int(float(y)) + 30
             # print(x,y)
             tel.append(get_num(svg, x, y))

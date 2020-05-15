@@ -63,10 +63,12 @@ driver.refresh()
 
 
 #  reuqest添加cookies，只需要cookies的键和值， requests.cookies.get_dict()
+session = requests.Session()
 
 cookies1 = {}
 for b in cookies:
     cookies1[b['name']] = b['value']
+    # session.cookise.set(b['name'],b['value'])
 
 resp = requests.get('http://mall.wine-world.com/', cookies=cookies1)
 # print(resp.text)
