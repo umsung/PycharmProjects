@@ -20,6 +20,7 @@ def get_desired_caps(deviceName=''):
     f = open(basepath, 'r', encoding='utf-8')
     a = f.read()
     dict_content = yaml.load(a)
+    # dict_content = yaml.safe_load(open(basepath))
     print(dict_content)
     for i in dict_content:
         if deviceName in i['desc']:

@@ -52,7 +52,7 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
-    from . import db
+    from .import db
     # 注册数据操作函数
     db.init_app(app)
     # 导入并注册 验证蓝图
@@ -61,11 +61,12 @@ def create_app(test_config=None):
 
     from .import blog
     app.register_blueprint(blog.bp)
+
+    from .import other
+    app.register_blueprint(other.bp)
     # app.add_url_rule('/', endpoint='index')
     # 与验证蓝图不同，博客蓝图没有 url_prefix 。把博客索引作为主索引
     # 在博客视图中index 视图的端点会被定义为 blog.index 。但是在验证视图 会指定向普通的 index 端点。 
     # 我们使用 app.add_url_rule() 关联端点名称 'index' 和 / URL ，这样 url_for('index') 或 url_for('blog.index') 都会有效，会生成同样的 / URL 。
     return app
 
-
-print(__name__)

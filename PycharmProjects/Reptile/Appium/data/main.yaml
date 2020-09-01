@@ -1,0 +1,29 @@
+toMemberShoppingMall:
+  - action: click
+    by: xpath
+    locator: //*[@text="会员商城"]
+
+toCrossBorderShoppingMall:
+  - action: click
+    by: xpath
+    locator: //*[@text="会员商城"]
+
+tohongKongMall:
+  - action: click
+    by: xpath
+    locator: //*[@text="香港商城"]
+
+toPlusList:
+  - action: click
+    by: xpath
+    locator: //*[@text="会员专享"]
+
+toHomePage:
+  - action: click
+    by: xpath
+    locator: //*[@text="首页"]
+
+ToMemberCenter:
+  - action: click
+    by: xpath
+    locator: //*[@text="会员中心"]

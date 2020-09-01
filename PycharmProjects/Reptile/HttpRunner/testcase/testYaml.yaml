@@ -1,0 +1,54 @@
+
+- config:
+    name: logincase   #  必须有	测试用例的名称，在测试报告中将作为标题
+    parameters:
+        - user: ["test1", "test2", "test3", "test4"]        # 参数化
+        - psw: ["123456", "123456", "123456", "123456"]
+        - csvdata:  mm
+    parameters:
+        - user-psw:
+            - ["test1", "psw1"]
+            - ["test2", "psw2"]
+            - ["test3", "psw3"]
+            - ["test4", "psw4"]
+    variables:
+        - return_token: ${token(test1, 123456)}
+    setup_hooks:
+        - 22
+    teardown_hooks:
+        - aa
+- test:
+    name: login case1
+    variables:
+        user: test
+        psw: 123456
+    times:  5     # 指定用例运行次数
+    skip: 跳过此用例，skipif 满足条件跳过， skipUnless条件不成立，返回值为False时候成立
+    skipIf: 11
+    request:
+        url: http://127.0.0.1:8000/api/v1/login/
+        method: POST
+        headers:
+            Content-Type: application/json
+            User-Agent: python-requests/2.18.4
+        json:
+            username: 11      # 引用变量
+            password: 11
+    setup_hooks:
+        - qq     #  调用debugtalk里的setup_request函数加密获取sign签名，再把sign签名加入json参数下
+    extract:
+        - token: content.token         # 提取token
+        - return_token: 11    # 引用 debugtalk.py 里面的函数使用${token()}
+    validate:
+        - eq: [status_code, 200]
+        - eq: [headers.Content-Type, application/json]
+        - eq: [content.msg, login success!]
+        - eq: [content.code, 0]
+        - eq: [asd, aa]
+        - eq: '<title>(.*?)<title>'
+        - eq:
+            - status_code
+            - 200
+        - eq:
+            - headers.Content-Type
+            - application/json

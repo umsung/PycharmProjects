@@ -1,0 +1,11 @@
+search:
+  - action: click
+    by: id
+    locator: seach_input_text
+  - action: send
+    by: id
+    locator: seach_input_text
+    value: '拉菲'
+  - action: click
+    by: xpath
+    locator: seach_input_text

@@ -1,0 +1,24 @@
+完成，就可以继续处理
+本质:将任务提交到线程池的任务队列中
+组成:等待队列和一系列线程
+作用: 主线程可以获取线程状态，返回值；一个线程完成，主线程可以知道
+
+2、 concurrent.futures.Executor
+作用:抽象类，有异步执行调用方法。有两个子类:
+ThreadPoolExecutor(max_workers)和ProcessPoolExecutor(max_workers)
+max_workers:表示有多少worker并行执行该任务,异步调用,若为None,则设置为机器的处理器数目
+
+3、 Executor.submit(fn, *args, **kwargs)
+作用:调度函数的执行
+参数: fn: 异步执行的函数,*args: fn的参数,**kwargs: fn的参数
+返回值: 返回一个Future对象，表示可调用的执行
+注意: submit是立即返回的
+
+4、 Executor.map(function, *iterables, timeout=None):
+作用:将argument作为参数执行函数，以异步方式执行；相当于map(func, *iterables)
+但是func是异步执行，如果操作超时，返回错误；不指定timeout,则不设置超时
+参数: func:异步执行函数，*iterables:可迭代对象，如列表，每一次func执行，都会从iterables中取参数
+
+
+5、 Executor.shutdown(wait=True)
+作用:释放系统资源，在submit()或map()等异步操作之后调用，使用with语句可以避免显示调用该方法

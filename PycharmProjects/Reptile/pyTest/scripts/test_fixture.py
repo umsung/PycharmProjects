@@ -3,7 +3,11 @@ import sys
 
 print(sys.path)
 
-@pytest.fixture(autouse=True)  # 设置为默认运行
+# @pytest.fixture(autouse=True)  # 设置为默认运行
+# def before():
+#     print("------->before")
+
+@pytest.fixture(scope="session")  # 设置为session级别，需要应用才会运行
 def before():
     print("------->before")
 

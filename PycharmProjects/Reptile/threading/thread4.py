@@ -5,6 +5,10 @@ import concurrent.futures
 
 # 线程池创建多线程
 
+
+
+
+
 def thread_function(name):
     logging.info("Thread %s: starting", name)
     time.sleep(2)

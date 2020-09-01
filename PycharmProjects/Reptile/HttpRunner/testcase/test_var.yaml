@@ -1,0 +1,126 @@
+# 变量声明与引用
+# variables 在config里定义全局参数，整个yaml文件可用， 在test里定义variables定义局部变量，仅当前用例可用
+# 应用参数 $variables
+# extract 提取参数值，传递
+
+- config:
+    name: logincase   #  必须有	测试用例的名称，在测试报告中将作为标题
+    parameters:
+        - user: ["test1", "test2", "test3", "test4"]        # 参数化
+        - psw: ["123456", "123456", "123456", "123456"]
+        - csvdata:  ${P(csvPath)}
+    parameters:
+        - user-psw:
+            - ["test1", "psw1"]
+            - ["test2", "psw2"]
+            - ["test3", "psw3"]
+            - ["test4", "psw4"]
+    variables:
+        - return_token: ${token(test1, 123456)}
+    setup_hooks:
+        - ${hook_up()}
+    teardown_hooks:
+        - ${hook_down()}
+- test:
+    name: login case1
+    variables:
+        user: test
+        psw: 123456
+    times:  5     # 指定用例运行次数
+    skip: 跳过此用例，skipif 满足条件跳过， skipUnless条件不成立，返回值为False时候成立
+    skipIf: $return_token
+    request:
+        url: http://127.0.0.1:8000/api/v1/login/
+        method: POST
+        headers:
+            Content-Type: application/json
+            User-Agent: python-requests/2.18.4
+        json:
+            username: $user      # 引用变量
+            password: $psw
+    setup_hooks:
+        - ${setup_request($reuqest)}     #  调用debugtalk里的setup_request函数加密获取sign签名，再把sign签名加入json参数下
+    extract:
+        - token: content.token         # 提取token
+        - return_token: ${token()}    # 引用 debugtalk.py 里面的函数使用${token()}
+    validate:
+        - eq: [status_code, 200]
+        - eq: [headers.Content-Type, application/json]
+        - eq: [content.msg, login success!]
+        - eq: [content.code, 0]
+        - eq: [$token, @￥#%#……@]
+        - eq: '<title>(.*?)<title>'   # 正则匹配结果
+        - eq:
+            - status_code
+            - 200
+        - eq:
+            - headers.Content-Type
+            - application/json
+    setup_hooks: [${debugtaik()}],    # 在 HTTP 请求发送前执行 hook 函数，主要用于准备工作
+    teardown_hooks: []   # 在 HTTP 请求发送后执行 hook 函数，主要用户测试后的清理工作
+
+- test:
+    name: get user info case1
+    request:
+        base_url: ${ENV(host)}
+        url: /api/v1/user/info/
+        method: GET
+        headers:
+            Content-Type: application/json
+            User-Agent: python-requests/2.18.4
+            Authorization: Token $token          # 引用token
+    validate:
+        - eq： [status_code, 200]
+        - ne: [status_code, 404]
+        - eq: [headers.Content-Type, application/json]
+        - eq: [content.0.age, 20]
+        - eq: [content.0.name, yoyo]
+        - eq: [content.0.mail, 283340479@qq.com]
+        - less_than: [status_code, 400]
+        - equals: [content.code, 0]
+        - equals: [content.msg, success!]
+        - length_equals: [content.datas, 2]
+        - greater_than_or_equals: [content.datas.0.age, 18]
+
+
+- test:
+    name: login case2
+    request:
+        url: http://127.0.0.1:8000/api/v1/login/
+        method: POST
+        headers:
+            Content-Type: application/json
+            User-Agent: python-requests/2.18.4
+        json:
+            username: $user
+            password: $psw
+    extract:
+        - token: content.token         # 提取token
+    validate:
+        - eq: [status_code, 200]
+        - eq: [headers.Content-Type, application/json]
+        - eq: [content.msg, login success!]
+        - eq: [content.code, 0]
+
+-test:
+    name: learn httprunner test case
+    variables: {}
+    request:
+        url: localhost
+        method: GET
+        headers:
+            Content-Type: application/json
+            User-Agent: python-requests/2.18.4
+        json:
+            username: test
+            password: 123456
+    extract:
+        - getValue: content.result
+    validate:
+        - eq: [status_code: 200]
+        - ne: [headers.Content_Type:  text/html]
+        - le: []
+        - lt: []
+        - ge: []
+        - gt: [content.datas.0.age, 18]
+

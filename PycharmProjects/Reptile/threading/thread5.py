@@ -31,9 +31,11 @@ if __name__ == "__main__":
     logging.getLogger().setLevel(logging.DEBUG)
     f = Fakedatabase()
     logging.info("Testing update. Starting  value is %d.", f.value)
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as excutor:
-        for i in range(3):
-            excutor.submit(f.update, i)
-        # excutor.map(f.update,range(3))  另一种写法
+    a = [0,1,2,3]
+    for i in range(2):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as excutor:
+            for i in a:
+                excutor.submit(f.update, i)
+            # excutor.map(f.update,range(3))  另一种写法
     
     logging.info("Testing update. Ending value is %d.", f.value)

@@ -1,4 +1,4 @@
-ith open('D:/用户目录/下载/YaimFi8l','r') as f:
+# ith open('D:/用户目录/下载/YaimFi8l','r') as f:
 #     a=f.readlines()
 
 #     for i in a:

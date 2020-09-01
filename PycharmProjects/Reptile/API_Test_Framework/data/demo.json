@@ -1,0 +1,11 @@
+{"topics":
+    {
+    "orange":"movie",
+    "shool":"testing-studio",
+    "president":"seveniruby"
+    }
+}
+
+
+//  base64 demo.json >demo64.txt
+// python -m http.server 10000

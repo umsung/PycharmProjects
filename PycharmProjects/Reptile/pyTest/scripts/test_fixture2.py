@@ -30,7 +30,7 @@ def search_user(user_id):
 def test_case_01(db):
     assert search_user('001') == 'xiaoming'
 
-def test_case_02(db):
+def test_case_02():
     assert search_user('002') == 'xiaohua'
 
 

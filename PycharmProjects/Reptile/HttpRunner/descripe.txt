@@ -1,0 +1,54 @@
+pip install httprunner==1.5.8
+
+hrun test_config_var.yml --html-report-/template E:\python36\Lib\site-packages\httprunner\templates\extent_report_template.html
+hrun testcase/test_var.yaml testcase/test_vae.json  --no-html-report
+
+使用命令行工具httpie测试接口
+
+http http://127.0.0.1:8000/api/v1/user/info/
+
+
+
+测试数据写到csv文件，可引用csv文件， 文件需放置在与测试用例文件相同的目录中
+
+
+
+用extract来提取返回结果值, 并且只能从前往后传递
+
+用validate来对比测试结果
+
+----------------------------------------------------------------------------
+在 HttpRunner 自动化测试项目中，主要存在如下几类文件：
+
+YAML/JSON（必须）：测试用例文件，一个文件对应一条测试用例
+debugtalk.py（可选）：脚本函数，存储项目中逻辑运算函数
+该文件存在时，将作为项目根目录定位标记，其所在目录即被视为项目工程的根目录（当前工作目录CWD）
+该文件不存在时，运行测试的路径将被视为当前工作目录CWD
+测试用例文件中的相对路径（例如.csv）均需基于当前工作目录CWD
+运行测试后，测试报告文件夹（reports）会生成在当前工作目录CWD
+.env（可选）：存储项目环境变量
+.csv（可选）：项目数据文件，用于进行数据驱动
+reports(自动生成)： 运行后自动生成，无需创建
+
+-------------------------------------------------------------------------------
+
+在 HttpRunner 中，测试用例组织主要基于三个概念：
+
+测试用例集（testsuite）：对应一个文件夹，包含单个或多个测试用例（YAML/JSON）文件
+测试用例（testcase）：对应一个 YAML/JSON 文件，包含单个或多个测试步骤
+测试步骤（teststep）：对应 YAML/JSON 文件中的一个 test，描述单次接口测试的全部内容，包括发起接口请求、解析响应结果、校验结果等
+对于单个 YAML/JSON 文件来说，数据存储结构为 list of dict 的形式，其中可能包含一个全局配置项（config）和若干个测试步骤（test）。
+
+config：作为整个测试用例的全局配置项
+test：对应单个测试步骤（teststep），测试用例存在顺序关系，运行时将从前往后依次运行各个测试步骤
+
+--------------------------------------------------------------------------------
+在测试用例内部，HttpRunner 划分了两层变量空间作用域（context）。
+
+config：作为整个测试用例的全局配置项，作用域为整个测试用例；
+test：测试步骤的变量空间（context）会继承或覆盖 config 中定义的内容；
+若某变量在 config 中定义了，在某 test 中没有定义，则该 test 会继承该变量
+若某变量在 config 和某 test 中都定义了，则该 test 中使用自己定义的变量值
+各个测试步骤（test）的变量空间相互独立，互不影响；
+如需在多个测试步骤（test）中传递参数值，则需要使用 extract 关键字，并且只能从前往后传递
+config配置

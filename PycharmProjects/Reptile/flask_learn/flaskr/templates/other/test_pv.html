@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试访问量统计SVG</title>
+</head>
+<body>
+    <h2>访问量统计演示页面</h2>
+    <div>
+        <p>这是一个完全静态没有后端的 HTML 页面</p>
+        <img src="http://127.0.0.1:5000/other/pv/a">
+        <img src="{{ url_for('other.calc_pv', user_id=user_id) }}">
+        
+    </div>
+
+</body>
+</html>
