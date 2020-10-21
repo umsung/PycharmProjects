@@ -1,0 +1,3 @@
+测试request获取作用在用例上的数据: admin2
+执行teardown
+最后关闭浏览器

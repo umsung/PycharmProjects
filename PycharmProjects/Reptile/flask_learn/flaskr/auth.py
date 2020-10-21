@@ -28,6 +28,7 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+
         db = get_db()
         error = None
         if not username:
@@ -59,6 +60,7 @@ def login():
     if request.method == 'POST':      
         username = request.form['username']
         password = request.form['password']
+        print(username, password)
         db = get_db()
         error = None
         user = db.execute(
@@ -77,7 +79,7 @@ def login():
         if error == None:
             # session.clear() # 防止在登陆状态下，再去登陆其他账号，导致session有多个账号信息
             session.pop('user_id',None)
-            session['user_id'] = db.cursor().execute('select id from user where username=?' ,(username,)).fetchone()[0]
+            session['user_id'] = db.cursor().execute('select id from user where username=?', (username,)).fetchone()[0]
             session.permanent = True
             permanent_session_lifetime = timedelta(minutes=1)  # 设置session到期时间
             # print("sessionid", session['user_id'])

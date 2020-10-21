@@ -10,23 +10,23 @@
     <input type="text" name="username" id="username" required>
     <span class="name_error" style="color: red;"></span>
     <label for="password">Password</label>
-    <input type="password" id="password" required>
+    <input type="password" name="password" id="password" required>
     <span class="upwd_error" style="color: red;" ></span>
-    <input type="hidden" id="md5_password" name="password">
+    <input type="hidden" id="md5_password" name="md5_password">
     <input type="submit" value="Log In">
 </form>
 
 <script>
         $('#username').blur(function(){
             check_name()
-        })
+        });
         function check_name(){
             var username = $.trim($('#username').val());
             var name_error = $('.name_error');
             var iserror = false;
             if(username.length=="" || username == undefined){
-                name_error.html('用户名不能为空')
-                name_error.show()
+                name_error.html('用户名不能为空');
+                name_error.show();
                 return false;
             }
             if(username.length>0){
@@ -37,43 +37,43 @@
                     async:false,
                     success:function(data){
                         if(data.result == '2'){
-                            name_error.html('用户名不存在')
-                            name_error.show()
+                            name_error.html('用户名不存在');
+                            name_error.show();
                             iserror = false;
                         }
                         else{
-                            name_error.html('')
+                            name_error.html('');
                             name_error.hide();
                             iserror = true;
                         }
                     }
-                })
+                });
                 return iserror;
             }
             else{
-                name_error.html('用户名错误')
-                name_error.show()
+                name_error.html('用户名错误');
+                name_error.show();
                 return false;
             }
         }
 
         $('#password').blur(function(){
             check_pwd()
-        })
+        });
         function check_pwd(){
-            var name = $.trim($('#username').val())
-            var pwd = $.trim($('#password').val())
-            var md5_pwd = $('#md5_password')
-            md5_pwd.val(hex_md5(pwd))
-            var pwd_error = $('.upwd_error')
+            var name = $.trim($('#username').val());
+            var pwd = $.trim($('#password').val());
+            var md5_pwd = $('#md5_password');
+            md5_pwd.val(hex_md5(pwd));
+            var pwd_error = $('.upwd_error');
             if(pwd.length == '' || pwd == undefined || pwd.length <0 || pwd.length >16){
-                pwd_error.html('密码错误')
-                pwd_error.show()
+                pwd_error.html('密码错误');
+                pwd_error.show();
                 return false;
             }
             else{
-                pwd_error.html('')
-                pwd_error.hide()
+                pwd_error.html('');
+                pwd_error.hide();
                 return true;
             }
         }
@@ -85,7 +85,7 @@
             else{
                 return false;
             }
-        };
+        }
     
     </script>
 {% endblock %}

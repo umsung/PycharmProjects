@@ -11,10 +11,10 @@ print(s.recv(1024).decode('utf-8'))
 
 # s.send(b'exit')
 # s.close()
-
-while True:
-    data = input('>>: ').strip()
-    if not data:
-        continue
-    s.send(data.encode('utf-8'))
-    print(s.recv(1024).decode('utf-8'))
+for i in range(5):
+    while True:
+        data = input('>>: ').strip()
+        if not data:
+            continue
+        s.send(data.encode('utf-8'))
+        print(s.recv(1024).decode('utf-8'))

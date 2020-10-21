@@ -2,7 +2,10 @@ import socket
 import threading
 import time
 from multiprocessing import Pool, Process
+import io,sys
+import concurrent.futures
 
+# sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8') #改变标准输出的默认编码
 
 # 服务器地址（主机，端口）
 address = ('127.0.0.1', 9999)
@@ -29,14 +32,14 @@ def tcplink(sock, addr):
     sock.send('已连接welcome!'.encode())
     while True:
         r_data = sock.recv(1024)
-        print('Receive: %s' % r_data.decode('utf-8'))
+        print('Receive from %s: %s' % addr, r_data.decode('utf-8'))
         time.sleep(1)
         if not r_data or r_data.decode('utf-8') == 'exit':
             break
 
         # s_data = input('请输入发送的内容：').strip()
-        s# sock.send('test'.encode('utf-8'))
-        # sock.send(s_data.encode('utf-8'))
+        # sock.send('test'.encode('utf-8'))
+        sock.send(r_data)
 
     sock.close()
     print('Connection from %s:%s closed' % addr)
@@ -45,13 +48,17 @@ def tcplink(sock, addr):
 if __name__ == "__main__":
  
 
-    p = Pool(3) # 进程池中进程数量默认是cpu核数
+    p = Pool(2) # 进程池中进程数量默认是cpu核数
     while True:
         # 接收客户端socket和地址
         sock, addr = s.accept()
         # 启动子线程处理连接
         # t = threading.Thread(target=tcplink, args=(sock, addr))
         # t.start()
+        # t.join()
+        # with concurrent.futures.ThreadPoolExecutor(max_workers=170) as excutor:
+            
+        #     excutor.submit(tcplink,sock,addr)
 
         # 使用进程池 
         p.apply_async(tcplink, args=(sock,addr))

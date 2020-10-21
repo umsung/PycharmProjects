@@ -16,5 +16,10 @@ while True:
     data = input('请输入内容>>：').strip()
     if not data:
         continue
+    if data == 'exit':
+        break
     s.send(data.encode('utf-8'))
-    # print(s.recv(1024).decode('utf-8'))
+    
+    print(s.recv(1024).decode('utf-8'))
+
+s.close()

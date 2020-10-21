@@ -16,7 +16,7 @@ def thread_function(name):
 
 if __name__ == "__main__":
     format = "%(asctime)s: %(message)s"
-    logging.basicConfig(format=format, level=logging.INFO, datefmt="%H%M%S")
+    logging.basicConfig(format=format, level=logging.INFO, datefmt="%Y-%m-%d %H:%M:%S")
     # thread = ThreadPoolExecutor(max_workers=3)
     # thread.submit(func,args)
     # thread.shutdown()

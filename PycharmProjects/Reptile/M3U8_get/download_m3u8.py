@@ -53,7 +53,7 @@ class Download_M3U8(object):
             for i in f:
                 if '#' not in i:
                     if len(i) > 2 and not i.startswith('https:'):
-                        i = 'https:' + i
+                        i = 'https://www.gentaji.com:65/' + i
                     domain = 'https://aszyw.com'
                     # url = domain + i
                     # yield domain + i
