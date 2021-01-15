@@ -1,0 +1,7 @@
+输入账号，密码先登录
+E:\autoTestDemo\Testing
+E:\autoTestDemo\Testing\test_calc.py
+['E:\\autoTestDemo', 'E:\\virtualenv\\autoTestDemo\\Scripts\\pytest.exe', 'D:\\ProgramData\\Anaconda\\python37.zip', 'D:\\ProgramData\\Anaconda\\DLLs', 'D:\\ProgramData\\Anaconda\\lib', 'D:\\ProgramData\\Anaconda', 'e:\\virtualenv\\autotestdemo', 'e:\\virtualenv\\autotestdemo\\lib\\site-packages', 'e:\\virtualenv\\autotestdemo\\lib\\site-packages\\setuptools-39.1.0-py3.7.egg']
+所有测试用例运行前执行
+run add
+每个用例运行后执行

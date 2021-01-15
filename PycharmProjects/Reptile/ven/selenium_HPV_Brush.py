@@ -45,7 +45,7 @@ def send_mail(subject='subject', content='content'):
     mail_host = 'smtp.163.com'
     mail_port = 25
     mail_user = 'qq1516442017@163.com'     # 账号
-    mail_pwd = 'qq545699233'       #
+    mail_pwd = '********'       #
 
     # mail message
     # 三个参数：第一个为邮件正文文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
@@ -67,11 +67,6 @@ def send_mail(subject='subject', content='content'):
 
 if __name__ == '__main__':
     s = 'HPV疫苗预约'
-    c = '''姓名：龙洋
-性别：女
-证件号：430521199401133323
-联系电话：15211186524
-邮箱地址：qq1516442017@163.com
-首针日期：7月12日、7月19日、7月26日
+    c = '''姓名：
 '''
     hpv_parse()

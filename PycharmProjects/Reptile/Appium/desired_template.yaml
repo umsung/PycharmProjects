@@ -1,0 +1,6 @@
+platformName: Android
+deviceName: emulator-5554
+ppPackage: com.taobao.taobao
+noReset: !!bool True
+uuid: emulator-5554
+appActivity: com.taobao.taobao.welcome.Welcome

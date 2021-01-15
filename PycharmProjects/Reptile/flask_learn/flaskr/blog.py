@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 import os,time
 from werkzeug.utils import secure_filename
 import math
-from flaskr import cache
+# from flaskr import cache
 import re
 
 # 验证蓝图
@@ -105,10 +105,12 @@ def allow_file(filename):
         
 
 def file_path(f, path='flaskr/static/img/'):
-    error = None
+
+    sys_img_path, db_img_path,error = None,None,None
     if not(f and allow_file(f.filename)):
         # return jsonify({'Error':1001,'msg':'请检查上传的图片类型，仅限于png、PNG、jpg、JPG、bmp、gif'})
         error = '请检查上传的图片类型，仅限于png、PNG、jpg、JPG、bmp'
+        return sys_img_path, db_img_path,error
     img_name = secure_filename(f.filename)
     print(img_name)
     md5_img_name = md5(img_name.encode('utf-8')).hexdigest()
@@ -129,10 +131,11 @@ def create():
         error = None
         title = request.form['title']
         body = request.form['body']
+        f = request.files['file']
+        print('f',f,'name',f.name,'filename',f.filename)
         db_img_path = ''
         sys_img_path=''
-        if 'file' in request.files:
-            f = request.files['file']
+        if  f.filename is not None and f.filename != '':            
             # if not(f and allow_file(f.filename)):
             #     return jsonify({'Error':1001,'msg':'请检查上传的图片类型，仅限于png、PNG、jpg、JPG、bmp、gif'})
             #     # error = '请检查上传的图片类型，仅限于png、PNG、jpg、JPG、bmp'
@@ -146,7 +149,7 @@ def create():
             # sys_img_path = os.path.join(current_app.config['UPLOAD_FOLDER'],real_file_name)
             # db_img_path = 'img/'+real_file_name
             # # img_path = file_path + md5_img_name+'.'+img_type
-           
+            
             sys_img_path,db_img_path ,error= file_path(f)
             # f.save(sys_img_path)
 
@@ -455,6 +458,7 @@ def upload():
     if request.method == 'POST':
         f = request.files['file']
         filename = secure_filename(f.filename)
+        print(f,filename)
         filename_type = f.filename.rsplit('.')[1].lower()
         md5_img_file = md5(filename.encode('utf-8')).hexdigest()
         if not (f and allow_file(filename)):
@@ -482,24 +486,24 @@ def cache_test():
     print('test')
     return render_template('blog/t.html')
 
-@bp.route('/test11')
-@cache.memoize(timeout=300)
-def cache_test11():
-    print('test11')
-    return render_template('blog/t1.html')
+# @bp.route('/test11')
+# @cache.memoize(timeout=300)
+# def cache_test11():
+#     print('test11')
+#     return render_template('blog/t1.html')
 
-@bp.before_request
-def handle_before():
-    # 从缓存里查询请求次数
-    count = cache.get('count') or 1
-    # 如果次数大于10,直接不让用户再继续了
-    if count > 10:
-        # return '5秒钟以内只能刷新十次'
-        abort(403,'操作次数频繁')
-    count +=1
-    # 该缓存5秒过期
-    cache.set('count',count,5)
-    if not request.user_agent:
-        return '求你带个头'
+# @bp.before_request
+# def handle_before():
+#     # 从缓存里查询请求次数
+#     count = cache.get('count') or 1
+#     # 如果次数大于10,直接不让用户再继续了
+#     if count > 10:
+#         # return '5秒钟以内只能刷新十次'
+#         abort(403,'操作次数频繁')
+#     count +=1
+#     # 该缓存5秒过期
+#     cache.set('count',count,5)
+#     if not request.user_agent:
+#         return '求你带个头'
 
 

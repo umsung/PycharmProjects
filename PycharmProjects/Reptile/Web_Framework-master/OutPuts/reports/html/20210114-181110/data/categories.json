@@ -1,0 +1,65 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "children" : [ {
+        "name" : "test_login_usernameNull_error",
+        "uid" : "6500dcb37a34e549",
+        "parentUid" : "f2c058ceec30221e5709e121c3794f3d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610619072742,
+          "stop" : 1610619072742,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_usernameFormat_error",
+        "uid" : "1fec22a53c041153",
+        "parentUid" : "f2c058ceec30221e5709e121c3794f3d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610619079752,
+          "stop" : 1610619079752,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_pwdFormat_error",
+        "uid" : "c7a89baed75d0dc7",
+        "parentUid" : "f2c058ceec30221e5709e121c3794f3d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610619079762,
+          "stop" : 1610619079762,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_success",
+        "uid" : "b5aa9f7ed48dd4af",
+        "parentUid" : "f2c058ceec30221e5709e121c3794f3d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610619079772,
+          "stop" : 1610619079772,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f2c058ceec30221e5709e121c3794f3d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

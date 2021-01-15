@@ -1,0 +1,61 @@
+{
+  "21d84dc5b0544f646e560b3fc6f8f462" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "92ae79ef184f3d64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610595278868,
+        "stop" : 1610595290918,
+        "duration" : 12050
+      }
+    } ]
+  },
+  "b7c9963723357b0faf6d03130d678f90" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "873edd1ad28905e4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>.checkPoint",
+      "time" : {
+        "start" : 1610595290922,
+        "stop" : 1610595323246,
+        "duration" : 32324
+      }
+    } ]
+  },
+  "5ff186fd6afcc46cfd2aa8ee4a7f3f2f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32f009ea08410b0f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6C760>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6C760>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6C760>.checkPoint",
+      "time" : {
+        "start" : 1610595323498,
+        "stop" : 1610595356086,
+        "duration" : 32588
+      }
+    } ]
+  }
+}

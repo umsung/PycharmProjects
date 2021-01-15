@@ -1,0 +1,48 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestCases.test_logincase.test_login",
+    "children" : [ {
+      "name" : "test_login_usernameFormat_error",
+      "uid" : "f25c26719fd11111",
+      "parentUid" : "62bb9ef20603f1204c7bfe1312d1b458",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610606012835,
+        "stop" : 1610606051837,
+        "duration" : 39002
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_login_pwdFormat_error",
+      "uid" : "43c80818ac243783",
+      "parentUid" : "62bb9ef20603f1204c7bfe1312d1b458",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610606051840,
+        "stop" : 1610606087270,
+        "duration" : 35430
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_login_success",
+      "uid" : "bf9999bd98511500",
+      "parentUid" : "62bb9ef20603f1204c7bfe1312d1b458",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610606087274,
+        "stop" : 1610606099140,
+        "duration" : 11866
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "TestCases.test_logincase.test_login"
+  } ]
+}

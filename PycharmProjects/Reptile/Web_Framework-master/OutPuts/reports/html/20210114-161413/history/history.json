@@ -1,0 +1,82 @@
+{
+  "21d84dc5b0544f646e560b3fc6f8f462" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8eb7916472276dea",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D92310>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D92310>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D92310>.checkPoint",
+      "time" : {
+        "start" : 1610612081748,
+        "stop" : 1610612082032,
+        "duration" : 284
+      }
+    } ]
+  },
+  "b7c9963723357b0faf6d03130d678f90" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "84e43993438f448e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFDCD0>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFDCD0>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFDCD0>.checkPoint",
+      "time" : {
+        "start" : 1610612081046,
+        "stop" : 1610612081439,
+        "duration" : 393
+      }
+    } ]
+  },
+  "e3de2cc26aceee9068f98fa7cfd0be9f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7a1b3a5aa47a4762",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFD940>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFD940>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFD940>.checkPoint",
+      "time" : {
+        "start" : 1610612076654,
+        "stop" : 1610612080852,
+        "duration" : 4198
+      }
+    } ]
+  },
+  "5ff186fd6afcc46cfd2aa8ee4a7f3f2f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5689230487b5edb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D52070>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D52070>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D52070>.checkPoint",
+      "time" : {
+        "start" : 1610612081454,
+        "stop" : 1610612081732,
+        "duration" : 278
+      }
+    } ]
+  }
+}

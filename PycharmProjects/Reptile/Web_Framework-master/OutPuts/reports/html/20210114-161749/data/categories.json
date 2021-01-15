@@ -1,0 +1,65 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: list indices must be integers or slices, not str",
+      "children" : [ {
+        "name" : "test_login_usernameNull_error",
+        "uid" : "239978d6ddfdbc00",
+        "parentUid" : "a6ca840760d68beef4d0b02ac437317c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610612291954,
+          "stop" : 1610612295646,
+          "duration" : 3692
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_usernameFormat_error",
+        "uid" : "939ca90c24423634",
+        "parentUid" : "a6ca840760d68beef4d0b02ac437317c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610612295863,
+          "stop" : 1610612296233,
+          "duration" : 370
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_pwdFormat_error",
+        "uid" : "717f9806efa38aed",
+        "parentUid" : "a6ca840760d68beef4d0b02ac437317c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610612296244,
+          "stop" : 1610612296481,
+          "duration" : 237
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_success",
+        "uid" : "2f413b92e04ca9b1",
+        "parentUid" : "a6ca840760d68beef4d0b02ac437317c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610612296493,
+          "stop" : 1610612296874,
+          "duration" : 381
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a6ca840760d68beef4d0b02ac437317c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

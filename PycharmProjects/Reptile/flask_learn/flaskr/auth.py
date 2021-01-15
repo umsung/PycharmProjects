@@ -7,10 +7,10 @@ from werkzeug.security import check_password_hash, generate_password_hash
 import functools
 from flaskr.db import get_db
 import time
-from werkzeug.contrib.cache import MemcachedCache
-from werkzeug.contrib.cache import SimpleCache
+from cachelib import MemcachedCache
+from cachelib import SimpleCache
 from functools import wraps
-from flaskr import cache
+# from flaskr import cache
 from datetime import timedelta
 
 # from flask.ext.cache import Cache

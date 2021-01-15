@@ -1,0 +1,119 @@
+{
+  "uid" : "873edd1ad28905e4",
+  "name" : "test_login_usernameFormat_error",
+  "fullName" : "TestCases.test_logincase.test_login.Test_Login#test_login_usernameFormat_error",
+  "historyId" : "b7c9963723357b0faf6d03130d678f90",
+  "time" : {
+    "start" : 1610595290922,
+    "stop" : 1610595323246,
+    "duration" : 32324
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>.checkPoint",
+  "statusTrace" : "self = <TestCases.test_logincase.test_login.Test_Login object at 0x0000000003BFAF10>, Driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2bbbe8473e25616250884782fc68c39b\")>\n\n    @allure.story('测试账号错误')\n    def test_login_usernameFormat_error(self, Driver):\n        app = {\"driver\": Driver,\"path\": Element.test_login_usernameFail_data,\"caseName\": sys._getframe().f_code.co_name}\n        page=LoginPage(app)\n        page.operate()\n>       assert page.checkPoint()\nE       assert False\nE        +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>>()\nE        +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>.checkPoint\n\nTestCases\\test_logincase\\test_login.py:28: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Driver",
+    "time" : {
+      "start" : 1610595252786,
+      "stop" : 1610595278866,
+      "duration" : 26080
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>.checkPoint",
+    "statusTrace" : "self = <TestCases.test_logincase.test_login.Test_Login object at 0x0000000003BFAF10>, Driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2bbbe8473e25616250884782fc68c39b\")>\n\n    @allure.story('测试账号错误')\n    def test_login_usernameFormat_error(self, Driver):\n        app = {\"driver\": Driver,\"path\": Element.test_login_usernameFail_data,\"caseName\": sys._getframe().f_code.co_name}\n        page=LoginPage(app)\n        page.operate()\n>       assert page.checkPoint()\nE       assert False\nE        +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>>()\nE        +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6CD90>.checkPoint\n\nTestCases\\test_logincase\\test_login.py:28: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "795e301a6fa39afa",
+      "name" : "查找元素超时",
+      "source" : "795e301a6fa39afa.png",
+      "type" : "image/png",
+      "size" : 842406
+    }, {
+      "uid" : "a3a61cb3eae68d20",
+      "name" : "log",
+      "source" : "a3a61cb3eae68d20.txt",
+      "type" : "text/plain",
+      "size" : 2070
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "Driver::0",
+    "time" : {
+      "start" : 1610595356091,
+      "stop" : 1610595358299,
+      "duration" : 2208
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试账号错误"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_logincase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "host",
+    "value" : "USER-20190821YP"
+  }, {
+    "name" : "thread",
+    "value" : "11092-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_logincase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "873edd1ad28905e4.json",
+  "parameterValues" : [ ]
+}

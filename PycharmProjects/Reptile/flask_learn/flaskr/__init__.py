@@ -1,7 +1,7 @@
 from flask import Flask
 import io
 import os
-from flask_cache import Cache
+# from flask_cache import Cache
 
 # flask链接 https://dormousehole.readthedocs.io/en/latest/tutorial/database.html
 # __init__.py 有两个作用：一是包含应用工厂；二是 告诉 Python flaskr 文件夹应当视作为一个包。
@@ -10,7 +10,7 @@ from flask_cache import Cache
 # create_app 是一个应用工厂函数,通过接收不同类型的实参来生成不同的 app 对象。
 # 此文件相当于main.py入口文件 
 
-cache = Cache()
+# cache = Cache()
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -25,7 +25,7 @@ def create_app(test_config=None):
     #                             'CACHE_REDIS_HOST': 'localhost',
     #                             'CACHE_REDIS_PORT': 6379,
     #                             'CACHE_REDIS_DB': 2})  # DB, default 0
-    cache.init_app(app,config={'CACHE_TYPE':'simple'})
+    # cache.init_app(app,config={'CACHE_TYPE':'simple'})
     app.config.from_mapping(  # 设置一个应用的 缺省配置：
         SECRET_KEY=os.urandom(16),
         # SECRET_KEY='dev',

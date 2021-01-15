@@ -2,7 +2,7 @@ import pytest
 
 
 test_user_data = [{"user": "admin1", "psw": "111111"},
-                  {"user": "admin1", "psw": ""}]
+                  {"user1": "admin1", "psw1": ""}]
 test_user_data2 = ['admin1','admin2']
 
 

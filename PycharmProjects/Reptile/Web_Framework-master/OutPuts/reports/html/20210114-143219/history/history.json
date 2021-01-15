@@ -1,0 +1,62 @@
+{
+  "21d84dc5b0544f646e560b3fc6f8f462" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f43655c68b1513d3",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "time" : {
+        "start" : 1610605946266,
+        "stop" : 1610605946266,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b7c9963723357b0faf6d03130d678f90" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c195a3c46031f670",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "time" : {
+        "start" : 1610605940458,
+        "stop" : 1610605940458,
+        "duration" : 0
+      }
+    } ]
+  },
+  "5ff186fd6afcc46cfd2aa8ee4a7f3f2f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b046daa3dbe74785",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "time" : {
+        "start" : 1610605946258,
+        "stop" : 1610605946258,
+        "duration" : 0
+      }
+    } ]
+  }
+}

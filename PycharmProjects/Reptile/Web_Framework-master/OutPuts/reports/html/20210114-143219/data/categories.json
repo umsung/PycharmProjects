@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "children" : [ {
+        "name" : "test_login_usernameFormat_error",
+        "uid" : "c195a3c46031f670",
+        "parentUid" : "f2c058ceec30221e5709e121c3794f3d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610605940458,
+          "stop" : 1610605940458,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_pwdFormat_error",
+        "uid" : "b046daa3dbe74785",
+        "parentUid" : "f2c058ceec30221e5709e121c3794f3d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610605946258,
+          "stop" : 1610605946258,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_success",
+        "uid" : "f43655c68b1513d3",
+        "parentUid" : "f2c058ceec30221e5709e121c3794f3d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610605946266,
+          "stop" : 1610605946266,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f2c058ceec30221e5709e121c3794f3d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

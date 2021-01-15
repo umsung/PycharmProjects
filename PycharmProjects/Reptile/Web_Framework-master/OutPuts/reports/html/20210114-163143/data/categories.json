@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: object of type 'NoneType' has no len()",
+      "children" : [ {
+        "name" : "test_login_usernameNull_error",
+        "uid" : "125774d7e14642a7",
+        "parentUid" : "0d2e996ca23280358c4652af00644e90",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610613130350,
+          "stop" : 1610613131425,
+          "duration" : 1075
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0d2e996ca23280358c4652af00644e90"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

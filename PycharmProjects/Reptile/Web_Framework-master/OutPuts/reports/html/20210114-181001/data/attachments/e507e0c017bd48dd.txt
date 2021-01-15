@@ -1,0 +1,35 @@
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 46
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {"url": "https://iparking.ibotech.com.cn/#/"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:basepage.py:83 test003_登录成功_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138001
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/f8a51935-5d6b-4b34-8392-568d81e4a9d4/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "f8a51935-5d6b-4b34-8392-568d81e4a9d4"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/f8a51935-5d6b-4b34-8392-568d81e4a9d4/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:basepage.py:83 test003_登录成功_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138001
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/f373c1d3-42de-48d4-863e-a159982e668d/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "f373c1d3-42de-48d4-863e-a159982e668d"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/f373c1d3-42de-48d4-863e-a159982e668d/value HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 500 1023
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/screenshot {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/screenshot HTTP/1.1" 500 1023
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 DELETE http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:63824 "DELETE /session/88108e980c4d79a889bc5df87a46a9ee HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request

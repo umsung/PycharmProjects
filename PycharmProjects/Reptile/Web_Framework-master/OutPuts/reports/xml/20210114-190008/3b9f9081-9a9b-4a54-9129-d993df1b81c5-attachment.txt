@@ -1,0 +1,4 @@
+[32mINFO    [0m root:Webdrivers.py:20 启动浏览器为：Chrome
+[31m[1mERROR   [0m root:Webdrivers.py:40 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)

@@ -7,6 +7,11 @@ from testsuits.mainland import MainLand
 # from testsuits import *
 import HtmlTestRunner
 # suite = unittest.TestSuite()
+
+# 三种方式加载要执行的用例
+# 一、unittest.TestSuite().addTest 加载当个用例
+# 二、unittest.TestSuite(unittest.makeSuite(BaiduSearch)  加载一个py文件下所有用例
+# 三、unittest.TestLoader().discover(testsuits_path) 加载路径下所有py文件用例
 # suite.addTest(BaiduSearch('test_baidu_search'))
 # suite.addTest(BaiduSearch('test_search2'))
 # suite.addTest(GetPageTitle('test_get_title'))

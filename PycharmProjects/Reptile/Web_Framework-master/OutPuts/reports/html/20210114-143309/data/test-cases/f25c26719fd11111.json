@@ -1,0 +1,111 @@
+{
+  "uid" : "f25c26719fd11111",
+  "name" : "test_login_usernameFormat_error",
+  "fullName" : "TestCases.test_logincase.test_login.Test_Login#test_login_usernameFormat_error",
+  "historyId" : "b7c9963723357b0faf6d03130d678f90",
+  "time" : {
+    "start" : 1610606012835,
+    "stop" : 1610606051837,
+    "duration" : 39002
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Driver",
+    "time" : {
+      "start" : 1610605990205,
+      "stop" : 1610606012833,
+      "duration" : 22628
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "73423746d0e6104f",
+      "name" : "查找元素超时",
+      "source" : "73423746d0e6104f.png",
+      "type" : "image/png",
+      "size" : 1890597
+    }, {
+      "uid" : "5c21cccce5e27286",
+      "name" : "log",
+      "source" : "5c21cccce5e27286.txt",
+      "type" : "text/plain",
+      "size" : 11832
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "Driver::0",
+    "time" : {
+      "start" : 1610606099140,
+      "stop" : 1610606101702,
+      "duration" : 2562
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试账号错误"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_logincase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "host",
+    "value" : "USER-20190821YP"
+  }, {
+    "name" : "thread",
+    "value" : "9732-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_logincase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f25c26719fd11111.json",
+  "parameterValues" : [ ]
+}

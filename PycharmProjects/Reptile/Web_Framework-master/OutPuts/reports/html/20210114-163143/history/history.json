@@ -1,0 +1,79 @@
+{
+  "21d84dc5b0544f646e560b3fc6f8f462" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "987ab3ec545f277",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610613139242,
+        "stop" : 1610613151003,
+        "duration" : 11761
+      }
+    } ]
+  },
+  "b7c9963723357b0faf6d03130d678f90" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8f90b35921161d0e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610613131684,
+        "stop" : 1610613135510,
+        "duration" : 3826
+      }
+    } ]
+  },
+  "e3de2cc26aceee9068f98fa7cfd0be9f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "125774d7e14642a7",
+      "status" : "broken",
+      "statusDetails" : "TypeError: object of type 'NoneType' has no len()",
+      "time" : {
+        "start" : 1610613130350,
+        "stop" : 1610613131425,
+        "duration" : 1075
+      }
+    } ]
+  },
+  "5ff186fd6afcc46cfd2aa8ee4a7f3f2f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5c91267eb257b616",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610613135515,
+        "stop" : 1610613139239,
+        "duration" : 3724
+      }
+    } ]
+  }
+}

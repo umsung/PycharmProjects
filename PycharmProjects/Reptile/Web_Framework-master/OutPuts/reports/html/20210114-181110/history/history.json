@@ -1,0 +1,82 @@
+{
+  "21d84dc5b0544f646e560b3fc6f8f462" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b5aa9f7ed48dd4af",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "time" : {
+        "start" : 1610619079772,
+        "stop" : 1610619079772,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b7c9963723357b0faf6d03130d678f90" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1fec22a53c041153",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "time" : {
+        "start" : 1610619079752,
+        "stop" : 1610619079752,
+        "duration" : 0
+      }
+    } ]
+  },
+  "e3de2cc26aceee9068f98fa7cfd0be9f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6500dcb37a34e549",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "time" : {
+        "start" : 1610619072742,
+        "stop" : 1610619072742,
+        "duration" : 0
+      }
+    } ]
+  },
+  "5ff186fd6afcc46cfd2aa8ee4a7f3f2f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c7a89baed75d0dc7",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'maximize_window'",
+      "time" : {
+        "start" : 1610619079762,
+        "stop" : 1610619079762,
+        "duration" : 0
+      }
+    } ]
+  }
+}

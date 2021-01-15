@@ -12,6 +12,33 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
 
+
+def moveBy():
+    Chrome_options = Options()
+    Chrome_options.add_experimental_option('debugaddr')
+    driver = webdriver.Chrome(options= Chrome_options)
+    driver.get('')
+
+    # 切换到iframe中
+    driver.switch_to_frame('iframeResult')
+    div = driver.find_element_by_id('draggable')
+
+    # 动作链
+    action = ActionChains(driver)
+    action.click_and_hold(div)
+
+    for i in range(5):
+        # perform()立即执行动作链
+        # move_by_offset(x,y);x水平，y垂直
+        action.move_by_offset(17,0).perform()
+        sleep(0.5)
+
+    # 释放
+    action.release()
+    # 关闭
+    driver.quit()
+    
+
 def drag_to():
     driver = webdriver.Chrome()
     driver.implicitly_wait(10)

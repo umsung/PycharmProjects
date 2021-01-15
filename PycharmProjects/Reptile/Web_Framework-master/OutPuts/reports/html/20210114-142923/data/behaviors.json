@@ -1,0 +1,56 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "测试账号错误",
+    "children" : [ {
+      "name" : "test_login_usernameFormat_error",
+      "uid" : "fa7adecb1625d382",
+      "parentUid" : "e600ee406cb49f51f7b0afe2df0dcc96",
+      "status" : "broken",
+      "time" : {
+        "start" : 1610605776572,
+        "stop" : 1610605780674,
+        "duration" : 4102
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e600ee406cb49f51f7b0afe2df0dcc96"
+  }, {
+    "name" : "测试密码错误",
+    "children" : [ {
+      "name" : "test_login_pwdFormat_error",
+      "uid" : "3fd1cc2e9c4bf4bd",
+      "parentUid" : "0c4219e7b4f6fc683e72507287ecd1a2",
+      "status" : "broken",
+      "time" : {
+        "start" : 1610605780927,
+        "stop" : 1610605784951,
+        "duration" : 4024
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0c4219e7b4f6fc683e72507287ecd1a2"
+  }, {
+    "name" : "测试登录成功",
+    "children" : [ {
+      "name" : "test_login_success",
+      "uid" : "69ed4b78d489e0f7",
+      "parentUid" : "9854010f2770f76675dd758aa2d559fa",
+      "status" : "broken",
+      "time" : {
+        "start" : 1610605785008,
+        "stop" : 1610605789013,
+        "duration" : 4005
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9854010f2770f76675dd758aa2d559fa"
+  } ]
+}

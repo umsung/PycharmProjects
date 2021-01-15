@@ -38,7 +38,7 @@ class Download_M3U8(object):
                     # 文件创建时间戳
                     createTime = datetime.fromtimestamp(createTimestamp).date()
                     now = datetime.now()
-                    threedayAge = now - timedelta(days=1)
+                    threedayAge = now - timedelta(days=5)
                     if createTime >= threedayAge.date():
                         # yield m3u8FilePath
                         a.append(m3u8FilePath)
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     # m3u8_url = 'https://aszyw.com/20191019/uyfQazNz/index.m3u8'
     # m3u8_file_path = 'D:/用户目录/下载/466d2c1e4d8807f56c7c7a73f962d027.m3u8'
     # file_name = '466d2c1e4d8807f56c7c7a73f962d027.mp4'
-    dir = 'D:/用户目录/下载'
+    dir = 'D:/用户目录/我的文档/Downloads'
     start_time = time.time()
 
     d = Download_M3U8(dir)

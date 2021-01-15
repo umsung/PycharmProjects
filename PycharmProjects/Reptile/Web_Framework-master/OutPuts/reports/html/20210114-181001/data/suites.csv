@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Jan 14 18:10:40 CST 2021","Thu Jan 14 18:10:52 CST 2021","11876","TestCases.test_logincase","test_login","Test_Login","","","test_login_success",""
+"passed","Thu Jan 14 18:10:25 CST 2021","Thu Jan 14 18:10:32 CST 2021","7400","TestCases.test_logincase","test_login","Test_Login","","","test_login_usernameNull_error",""
+"passed","Thu Jan 14 18:10:36 CST 2021","Thu Jan 14 18:10:40 CST 2021","4179","TestCases.test_logincase","test_login","Test_Login","","","test_login_pwdFormat_error",""
+"passed","Thu Jan 14 18:10:32 CST 2021","Thu Jan 14 18:10:36 CST 2021","3721","TestCases.test_logincase","test_login","Test_Login","","","test_login_usernameFormat_error",""

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:basepage.py:85 test003_登录成功_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138001
+[32mINFO    [0m root:basepage.py:85 test003_登录成功_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138001
+[32mINFO    [0m root:basepage.py:85 test003_登录成功_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+[32mINFO    [0m root:basepage.py:85 test003_登录成功_操作步骤：==定位元素-//*[@id="subtitle"]/span__定位方式-xpath__操作方法-get_text__具体信息-

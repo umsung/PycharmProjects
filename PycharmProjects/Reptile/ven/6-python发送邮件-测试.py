@@ -40,6 +40,43 @@ def send_mail(subject='subject', content='content'):
         print(e)
 
 
+def send_mail_withFile(sender, psw, receiver, smtpserver, report_file):
+    '''发送最新的测试报告内容，发送可带附件的邮件'''
+    # 读取测试报告的内容
+    with open(report_file, "rb") as f:
+        mail_body = f.read()
+    # 定义邮件内容
+    msg = MIMEMultipart()   # 模块MIMEMultipart发送可带附件, MIMEText只能发送正文
+    body = MIMEText(mail_body, _subtype='html', _charset='utf-8')
+    msg['Subject'] = u"自动化测试报告"
+    msg["from"] = sender
+    msg["to"] = psw
+    # 加上时间戳
+    # msg["date"] = time.strftime('%a, %d %b %Y %H_%M_%S %z')
+    msg.attach(body)
+    # 添加附件
+    att = MIMEText(mail_body, "base64", "utf-8")
+    # att = MIMEText(open(report_file, "rb").read(), "base64", "utf-8")
+    att["Content-Type"] = "application/octet-stream"
+    att["Content-Disposition"] = 'attachment; filename= "report.html"'
+    msg.attach(att)
+
+    # --- 发送邮件 兼容163和qq邮箱--
+    try:
+        # 登录邮箱
+        smtp = smtplib.SMTP()
+        # 连接邮箱服务器
+        smtp.connect(smtpserver)
+        # 用户名密码
+        smtp.login(sender, psw)
+    except:
+        smtp = smtplib.SMTP_SSL(smtpserver, port)
+        smtp.login(sender, psw)
+    smtp.sendmail(sender, receiver, msg.as_string())
+    smtp.quit()
+    print('test report email has send out !')
+
+
 s = 'Please study hard'
 c = 'My name is Teacher hou, I teach python'
 send_mail(subject=s, content=c)

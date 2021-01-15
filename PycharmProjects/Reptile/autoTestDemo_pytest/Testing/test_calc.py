@@ -93,6 +93,7 @@ class TestCalc1:
     @pytest.mark.parametrize('par', test_user_data2, indirect=True)
     def test_par(self, par):
         # 添加indirect=True参数是为了把par当成一个函数去执行，而不是一个参数
+        # par函数获取test_user_data2数据
         param = par
         print(param)
         assert 'admin' in param

@@ -1,0 +1,62 @@
+{
+  "21d84dc5b0544f646e560b3fc6f8f462" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b1f4eaec4d2520fa",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C9FB20>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C9FB20>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C9FB20>.checkPoint",
+      "time" : {
+        "start" : 1610611764498,
+        "stop" : 1610611764739,
+        "duration" : 241
+      }
+    } ]
+  },
+  "b7c9963723357b0faf6d03130d678f90" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9b29c184c123ffda",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C3CDF0>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C3CDF0>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C3CDF0>.checkPoint",
+      "time" : {
+        "start" : 1610611760054,
+        "stop" : 1610611763899,
+        "duration" : 3845
+      }
+    } ]
+  },
+  "5ff186fd6afcc46cfd2aa8ee4a7f3f2f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d9792f41641644d3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6E070>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6E070>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003C6E070>.checkPoint",
+      "time" : {
+        "start" : 1610611764104,
+        "stop" : 1610611764481,
+        "duration" : 377
+      }
+    } ]
+  }
+}

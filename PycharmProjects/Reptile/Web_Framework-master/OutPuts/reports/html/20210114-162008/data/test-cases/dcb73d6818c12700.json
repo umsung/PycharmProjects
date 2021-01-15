@@ -1,0 +1,113 @@
+{
+  "uid" : "dcb73d6818c12700",
+  "name" : "test_login_usernameNull_error",
+  "fullName" : "TestCases.test_logincase.test_login.Test_Login#test_login_usernameNull_error",
+  "historyId" : "e3de2cc26aceee9068f98fa7cfd0be9f",
+  "time" : {
+    "start" : 1610612430976,
+    "stop" : 1610612434762,
+    "duration" : 3786
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+  "statusTrace" : "self = <TestCases.test_logincase.test_login.Test_Login object at 0x0000000003C35910>, Driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7440bbae53ff21c982f07870a26d6d66\")>\n\n    @allure.story('测试账号为空')\n    def test_login_usernameNull_error(self, Driver):\n        app = {\"driver\": Driver,\"path\": Element.test_login_data,\"caseName\": sys._getframe().f_code.co_name,\"num\" :0}\n>       page=LoginPage(app)\n\nTestCases\\test_logincase\\test_login.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nPageObjects\\LoginPage\\login_page.py:17: in __init__\n    self.page = Pages(app)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Pages.Pages object at 0x0000000003C871F0>\nkwargs = {'caseName': 'test_login_usernameNull_error', 'driver': <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7440b...th': 'd:\\\\Git\\\\PycharmProjects\\\\PycharmProjects\\\\Reptile\\\\Web_Framework-master\\\\TestData\\\\Login\\\\test_login_data.yaml'}\n\n    def __init__(self,kwargs):\n        _init = {\"driver\": kwargs[\"driver\"], \"test_msg\": getYaml(kwargs[\"path\"]) if kwargs.get('num') == None else getYaml(kwargs[\"path\"])[kwargs.get('num')],\"caseName\": kwargs[\"caseName\"]}\n    \n        self.driver = _init[\"driver\"]\n    \n        if _init.get(\"launch\", \"0\") == \"0\":  # 若为空， 刷新页面\n            self.driver.get(self.driver.current_url)\n        self.operateElement = \"\"\n        self.isOperate = True\n        self.test_msg = _init[\"test_msg\"]\n>       self.testInfo = self.test_msg[1][\"testinfo\"]\nE       TypeError: 'bool' object is not subscriptable\n\nCommon\\Pages.py:24: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Driver",
+    "time" : {
+      "start" : 1610612409376,
+      "stop" : 1610612430975,
+      "duration" : 21599
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+    "statusTrace" : "self = <TestCases.test_logincase.test_login.Test_Login object at 0x0000000003C35910>, Driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7440bbae53ff21c982f07870a26d6d66\")>\n\n    @allure.story('测试账号为空')\n    def test_login_usernameNull_error(self, Driver):\n        app = {\"driver\": Driver,\"path\": Element.test_login_data,\"caseName\": sys._getframe().f_code.co_name,\"num\" :0}\n>       page=LoginPage(app)\n\nTestCases\\test_logincase\\test_login.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nPageObjects\\LoginPage\\login_page.py:17: in __init__\n    self.page = Pages(app)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Pages.Pages object at 0x0000000003C871F0>\nkwargs = {'caseName': 'test_login_usernameNull_error', 'driver': <selenium.webdriver.chrome.webdriver.WebDriver (session=\"7440b...th': 'd:\\\\Git\\\\PycharmProjects\\\\PycharmProjects\\\\Reptile\\\\Web_Framework-master\\\\TestData\\\\Login\\\\test_login_data.yaml'}\n\n    def __init__(self,kwargs):\n        _init = {\"driver\": kwargs[\"driver\"], \"test_msg\": getYaml(kwargs[\"path\"]) if kwargs.get('num') == None else getYaml(kwargs[\"path\"])[kwargs.get('num')],\"caseName\": kwargs[\"caseName\"]}\n    \n        self.driver = _init[\"driver\"]\n    \n        if _init.get(\"launch\", \"0\") == \"0\":  # 若为空， 刷新页面\n            self.driver.get(self.driver.current_url)\n        self.operateElement = \"\"\n        self.isOperate = True\n        self.test_msg = _init[\"test_msg\"]\n>       self.testInfo = self.test_msg[1][\"testinfo\"]\nE       TypeError: 'bool' object is not subscriptable\n\nCommon\\Pages.py:24: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "56eec1247bcc9ffc",
+      "name" : "log",
+      "source" : "56eec1247bcc9ffc.txt",
+      "type" : "text/plain",
+      "size" : 3510
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "Driver::0",
+    "time" : {
+      "start" : 1610612438873,
+      "stop" : 1610612440991,
+      "duration" : 2118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试账号为空"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_logincase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "host",
+    "value" : "USER-20190821YP"
+  }, {
+    "name" : "thread",
+    "value" : "6000-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_logincase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "dcb73d6818c12700.json",
+  "parameterValues" : [ ]
+}

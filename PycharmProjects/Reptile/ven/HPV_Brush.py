@@ -67,12 +67,7 @@ def send_mail(subject='subject', content='content'):
 
 if __name__ == '__main__':
     s = 'HPV疫苗预约'
-    c = '''姓名：龙洋
-性别：女
-证件号：430521199401133323
-联系电话：15211186524
-邮箱地址：qq1516442017@163.com
-首针日期：6月6日、6月14日、6月21日
+    c = '''姓名
 '''
     hpv_parse()
 

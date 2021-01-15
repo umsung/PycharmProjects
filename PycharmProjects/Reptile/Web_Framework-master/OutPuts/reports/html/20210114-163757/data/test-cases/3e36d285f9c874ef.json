@@ -1,0 +1,105 @@
+{
+  "uid" : "3e36d285f9c874ef",
+  "name" : "test_login_success",
+  "fullName" : "TestCases.test_logincase.test_login.Test_Login#test_login_success",
+  "historyId" : "21d84dc5b0544f646e560b3fc6f8f462",
+  "time" : {
+    "start" : 1610613514776,
+    "stop" : 1610613521511,
+    "duration" : 6735
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Driver",
+    "time" : {
+      "start" : 1610613478786,
+      "stop" : 1610613500087,
+      "duration" : 21301
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "57f70a821b112b7",
+      "name" : "log",
+      "source" : "57f70a821b112b7.txt",
+      "type" : "text/plain",
+      "size" : 8341
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "Driver::0",
+    "time" : {
+      "start" : 1610613521513,
+      "stop" : 1610613523677,
+      "duration" : 2164
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试登录成功"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_logincase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "host",
+    "value" : "USER-20190821YP"
+  }, {
+    "name" : "thread",
+    "value" : "10268-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_logincase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3e36d285f9c874ef.json",
+  "parameterValues" : [ ]
+}

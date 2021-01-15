@@ -1,0 +1,17 @@
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:35242/session/2bbbe8473e25616250884782fc68c39b/url {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:35242 "GET /session/2bbbe8473e25616250884782fc68c39b/url HTTP/1.1" 200 61
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:35242/session/2bbbe8473e25616250884782fc68c39b/url {"url": "https://iparking.ibotech.com.cn/#/mapIndex?id=123"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:35242 "POST /session/2bbbe8473e25616250884782fc68c39b/url HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:35242/session/2bbbe8473e25616250884782fc68c39b/element {"using": "css selector", "value": "[id=\"inp\"]"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:35242 "POST /session/2bbbe8473e25616250884782fc68c39b/element HTTP/1.1" 404 1036
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:35242/session/2bbbe8473e25616250884782fc68c39b/screenshot {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:35242 "GET /session/2bbbe8473e25616250884782fc68c39b/screenshot HTTP/1.1" 200 1123164
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:basepage.py:242 截图成功，路径为：d:\Git\PycharmProjects\PycharmProjects\Reptile\Web_Framework-master\OutPuts\images/20210114113555_查找元素超时.png
+[1m[31mERROR   [0m root:basepage.py:59 ==查找元素超时==
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 DELETE http://127.0.0.1:35242/session/2bbbe8473e25616250884782fc68c39b {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:433 http://127.0.0.1:35242 "DELETE /session/2bbbe8473e25616250884782fc68c39b HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request

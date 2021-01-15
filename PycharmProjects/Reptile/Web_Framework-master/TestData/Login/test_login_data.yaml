@@ -1,0 +1,116 @@
+-
+  testinfo:
+      - id: test001
+        title: 登录失败，账号密码为空
+        # info: 打开ibotech
+  testcase:
+      - element_info: inp
+        find_type: id
+        operate_type: send_keys
+        info: 输入空用户名
+        msg:  '                '        
+      - element_info: //*[@id ="password"]/div/div[1]/input
+        find_type: xpath
+        operate_type: send_keys
+        msg: 138002
+        info: 输入密码138001
+      - element_info: //*[@id="app"]/div/div[1]/form/div[4]/div/button
+        find_type: xpath
+        operate_type: click
+        info: 点击登录
+        is_time: 2   # 等待时间，sleep等待
+        # check_time   显性等待时间WebDriverWait(self.driver, check_time)
+  check:
+      - element_info: //*[@id="app"]/div/div[1]/form/p[1]
+        find_type: xpath
+        operate_type: get_text
+        index: 用户名或密码不能为空
+        info: 密码错误，“你输入的密码和账户名不匹配，请重新输入”
+        check: compare
+
+-  
+  testinfo:
+      - id: test002
+        title: 登录失败，用户名错误
+        info: 打开ibotech
+  testcase:
+      - element_info: inp
+        find_type: id
+        operate_type: send_keys
+        info: 输入用户名
+        msg: 13800138002
+      - element_info: //*[@id ="password"]/div/div[1]/input
+        find_type: xpath
+        operate_type: send_keys
+        msg: 138001
+        info: 输入密码138001
+      - element_info: //*[@id="app"]/div/div[1]/form/div[4]/div/button
+        find_type: xpath
+        operate_type: click
+        info: 点击登录
+        is_time: 2     
+  check:
+      - element_info: //*[@id="app"]/div/div[1]/form/p[1]
+        find_type: xpath
+        operate_type: get_text
+        index: 用户账户不存在
+        info: 用户名存在，出现“用户账户不存在!”提示
+        check: compare_value
+
+-
+  testinfo:
+      - id: test003
+        title: 登录失败，密码错误
+        info: 打开ibotech
+  testcase:
+      - element_info: inp
+        find_type: id
+        operate_type: send_keys
+        info: 输入用户名
+        msg: 13800138001
+      - element_info: //*[@id ="password"]/div/div[1]/input
+        find_type: xpath
+        operate_type: send_keys
+        msg: 138003
+        info: 输入密码138003
+      - element_info: //*[@id="app"]/div/div[1]/form/div[4]/div/button
+        find_type: xpath
+        operate_type: click
+        info: 点击登录
+        is_time: 2     
+  check:
+      - element_info: //*[@id="app"]/div/div[1]/form/p[1]
+        find_type: xpath
+        operate_type: get_text
+        index: 你输入的密码和账户名不匹配
+        info: 密码错误，“你输入的密码和账户名不匹配，请重新输入”
+        check: compare
+        
+-
+  testinfo:
+    - id: test003
+      title: 登录成功
+      # info: 打开ibotech
+  testcase:
+    - element_info: inp
+      find_type: id
+      operate_type: send_keys
+      info: 输入用户名
+      msg: 13800138001
+    - element_info: //*[@id ="password"]/div/div[1]/input
+      find_type: xpath
+      operate_type: send_keys
+      msg: 138001
+      info: 输入密码138001
+    - element_info: //*[@id="app"]/div/div[1]/form/div[4]/div/button
+      find_type: xpath
+      operate_type: click
+      info: 点击登录
+      is_time: 5
+  check:
+      - element_info: //*[@id="subtitle"]/span
+        find_type: xpath
+        operate_type: get_text
+        index: 艾伯资讯
+        info: 出现错误的密码登录不成功提示框
+        check: compare

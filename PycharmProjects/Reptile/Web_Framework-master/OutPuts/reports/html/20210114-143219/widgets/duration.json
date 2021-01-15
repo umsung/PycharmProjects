@@ -1,0 +1,31 @@
+[ {
+  "uid" : "c195a3c46031f670",
+  "name" : "test_login_usernameFormat_error",
+  "time" : {
+    "start" : 1610605940458,
+    "stop" : 1610605940458,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b046daa3dbe74785",
+  "name" : "test_login_pwdFormat_error",
+  "time" : {
+    "start" : 1610605946258,
+    "stop" : 1610605946258,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f43655c68b1513d3",
+  "name" : "test_login_success",
+  "time" : {
+    "start" : 1610605946266,
+    "stop" : 1610605946266,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

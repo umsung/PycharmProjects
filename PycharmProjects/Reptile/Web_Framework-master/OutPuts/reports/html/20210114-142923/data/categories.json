@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: chrome not reachable\n  (Session info: chrome=87.0.4280.66)",
+      "children" : [ {
+        "name" : "test_login_usernameFormat_error",
+        "uid" : "fa7adecb1625d382",
+        "parentUid" : "901d1efdccd44834a55ff6d25e353977",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610605776572,
+          "stop" : 1610605780674,
+          "duration" : 4102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_pwdFormat_error",
+        "uid" : "3fd1cc2e9c4bf4bd",
+        "parentUid" : "901d1efdccd44834a55ff6d25e353977",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610605780927,
+          "stop" : 1610605784951,
+          "duration" : 4024
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_success",
+        "uid" : "69ed4b78d489e0f7",
+        "parentUid" : "901d1efdccd44834a55ff6d25e353977",
+        "status" : "broken",
+        "time" : {
+          "start" : 1610605785008,
+          "stop" : 1610605789013,
+          "duration" : 4005
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "901d1efdccd44834a55ff6d25e353977"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

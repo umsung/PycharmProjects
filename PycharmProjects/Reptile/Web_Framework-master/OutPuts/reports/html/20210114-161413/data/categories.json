@@ -1,0 +1,77 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFD940>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFD940>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFD940>.checkPoint",
+      "children" : [ {
+        "name" : "test_login_usernameNull_error",
+        "uid" : "7a1b3a5aa47a4762",
+        "parentUid" : "e5551197a1b0800acc9fbec2f4eba8e3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610612076654,
+          "stop" : 1610612080852,
+          "duration" : 4198
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e5551197a1b0800acc9fbec2f4eba8e3"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFDCD0>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFDCD0>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003BFDCD0>.checkPoint",
+      "children" : [ {
+        "name" : "test_login_usernameFormat_error",
+        "uid" : "84e43993438f448e",
+        "parentUid" : "435b354d59c6a8e2afbe6759e38f733d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610612081046,
+          "stop" : 1610612081439,
+          "duration" : 393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "435b354d59c6a8e2afbe6759e38f733d"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D52070>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D52070>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D52070>.checkPoint",
+      "children" : [ {
+        "name" : "test_login_pwdFormat_error",
+        "uid" : "5689230487b5edb",
+        "parentUid" : "de2d735abdd19d249f68ae12ee1ad44a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610612081454,
+          "stop" : 1610612081732,
+          "duration" : 278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de2d735abdd19d249f68ae12ee1ad44a"
+    }, {
+      "name" : "AssertionError: assert False\n +  where False = <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D92310>>()\n +    where <bound method LoginPage.checkPoint of <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D92310>> = <PageObjects.LoginPage.login_page.LoginPage object at 0x0000000003D92310>.checkPoint",
+      "children" : [ {
+        "name" : "test_login_success",
+        "uid" : "8eb7916472276dea",
+        "parentUid" : "2dc2ac43c861a3fb45a69034fae06c22",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610612081748,
+          "stop" : 1610612082032,
+          "duration" : 284
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2dc2ac43c861a3fb45a69034fae06c22"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

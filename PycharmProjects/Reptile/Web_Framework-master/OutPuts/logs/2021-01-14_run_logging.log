@@ -1,0 +1,1412 @@
+2021-01-14 14:33 LoggingConf.py[line:37] DEBUG debug message
+2021-01-14 14:33 LoggingConf.py[line:38] INFO info message
+2021-01-14 14:33 LoggingConf.py[line:39] WARNING warning message
+2021-01-14 14:33 LoggingConf.py[line:40] ERROR error message
+2021-01-14 14:33 LoggingConf.py[line:41] CRITICAL critical error message
+2021-01-14 14:33 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 14:33 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:12079
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session HTTP/1.1" 200 721
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/window/maximize {}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/window/maximize HTTP/1.1" 200 52
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/timeouts {"implicit": 30000}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/timeouts HTTP/1.1" 200 14
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/window/maximize {}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/window/maximize HTTP/1.1" 200 52
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/url HTTP/1.1" 200 14
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/url {}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/url HTTP/1.1" 200 46
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/url HTTP/1.1" 200 14
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 basepage.py[line:83] INFO test001_登录失败，用户名错误_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138002
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/c49bbf00-584c-4c19-831d-a060b0a0b70e/value {"text": "13800138002", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "2"], "id": "c49bbf00-584c-4c19-831d-a060b0a0b70e"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/c49bbf00-584c-4c19-831d-a060b0a0b70e/value HTTP/1.1" 200 14
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 basepage.py[line:83] INFO test001_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138001
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/9314a040-469d-4188-979a-b0aa2ee07885/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "9314a040-469d-4188-979a-b0aa2ee07885"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/9314a040-469d-4188-979a-b0aa2ee07885/value HTTP/1.1" 200 14
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 basepage.py[line:83] INFO test001_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/5c401d67-c1c3-442b-aaf6-0fe0a6e4ca80/click {"id": "5c401d67-c1c3-442b-aaf6-0fe0a6e4ca80"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/5c401d67-c1c3-442b-aaf6-0fe0a6e4ca80/click HTTP/1.1" 200 14
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 basepage.py[line:83] INFO test001_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/edd23a92-dc42-41f5-a128-707289d7366e/text {"id": "edd23a92-dc42-41f5-a128-707289d7366e"}
+2021-01-14 14:33 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/element/edd23a92-dc42-41f5-a128-707289d7366e/text HTTP/1.1" 200 34
+2021-01-14 14:33 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 404 1043
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/screenshot {}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/screenshot HTTP/1.1" 200 2520808
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:242] INFO 截图成功，路径为：d:\Git\PycharmProjects\PycharmProjects\Reptile\Web_Framework-master\OutPuts\images/20210114143410_查找元素超时.png
+2021-01-14 14:34 basepage.py[line:59] ERROR ==查找元素超时==
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/url {}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/url HTTP/1.1" 200 46
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/url HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test002_登录失败，密码错误_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138001
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/c3240ce6-db36-4568-814f-2765dd1b7800/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "c3240ce6-db36-4568-814f-2765dd1b7800"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/c3240ce6-db36-4568-814f-2765dd1b7800/value HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test002_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138002
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/e082190d-57cf-4ccf-9a97-c80da68ec6c0/value {"text": "138002", "value": ["1", "3", "8", "0", "0", "2"], "id": "e082190d-57cf-4ccf-9a97-c80da68ec6c0"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/e082190d-57cf-4ccf-9a97-c80da68ec6c0/value HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test002_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/d8b976c5-033b-4d00-aa10-f740f3432da4/click {"id": "d8b976c5-033b-4d00-aa10-f740f3432da4"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/d8b976c5-033b-4d00-aa10-f740f3432da4/click HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test002_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/6dd7e00b-b4cc-4ee3-9f8c-9a7536f9bd8b/text {"id": "6dd7e00b-b4cc-4ee3-9f8c-9a7536f9bd8b"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/element/6dd7e00b-b4cc-4ee3-9f8c-9a7536f9bd8b/text HTTP/1.1" 200 72
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 404 1043
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/screenshot {}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/screenshot HTTP/1.1" 200 2523240
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:242] INFO 截图成功，路径为：d:\Git\PycharmProjects\PycharmProjects\Reptile\Web_Framework-master\OutPuts\images/20210114143446_查找元素超时.png
+2021-01-14 14:34 basepage.py[line:59] ERROR ==查找元素超时==
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/url {}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/url HTTP/1.1" 200 46
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/url HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138001
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/2c9e93d9-a565-4126-bd5d-783a771e2f85/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "2c9e93d9-a565-4126-bd5d-783a771e2f85"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/2c9e93d9-a565-4126-bd5d-783a771e2f85/value HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138001
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/02b97e58-db28-444a-8a3a-4dbddbb41173/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "02b97e58-db28-444a-8a3a-4dbddbb41173"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/02b97e58-db28-444a-8a3a-4dbddbb41173/value HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/b6b9f26c-2958-4844-b756-6c5d82e9987d/click {"id": "b6b9f26c-2958-4844-b756-6c5d82e9987d"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element/b6b9f26c-2958-4844-b756-6c5d82e9987d/click HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id="subtitle"]/span_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "POST /session/4a1ae376784796199c8165df195845ae/element HTTP/1.1" 200 88
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae/element/71379438-25c4-4c29-8a4c-3a344c51b040/text {"id": "71379438-25c4-4c29-8a4c-3a344c51b040"}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "GET /session/4a1ae376784796199c8165df195845ae/element/71379438-25c4-4c29-8a4c-3a344c51b040/text HTTP/1.1" 200 48
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 14:34 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:12079/session/4a1ae376784796199c8165df195845ae {}
+2021-01-14 14:34 connectionpool.py[line:433] DEBUG http://127.0.0.1:12079 "DELETE /session/4a1ae376784796199c8165df195845ae HTTP/1.1" 200 14
+2021-01-14 14:34 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:08 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 16:08 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 16:08 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:33857
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session HTTP/1.1" 200 720
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/window/maximize {}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session/68fbff58d9309bc4b77a0f264259e888/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/timeouts {"implicit": 30000}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session/68fbff58d9309bc4b77a0f264259e888/timeouts HTTP/1.1" 200 14
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/window/maximize {}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session/68fbff58d9309bc4b77a0f264259e888/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session/68fbff58d9309bc4b77a0f264259e888/url HTTP/1.1" 200 14
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/url {}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "GET /session/68fbff58d9309bc4b77a0f264259e888/url HTTP/1.1" 200 46
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session/68fbff58d9309bc4b77a0f264259e888/url HTTP/1.1" 200 14
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/url {}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "GET /session/68fbff58d9309bc4b77a0f264259e888/url HTTP/1.1" 200 46
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session/68fbff58d9309bc4b77a0f264259e888/url HTTP/1.1" 200 14
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/url {}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "GET /session/68fbff58d9309bc4b77a0f264259e888/url HTTP/1.1" 200 46
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "POST /session/68fbff58d9309bc4b77a0f264259e888/url HTTP/1.1" 200 14
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:09 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:33857/session/68fbff58d9309bc4b77a0f264259e888 {}
+2021-01-14 16:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:33857 "DELETE /session/68fbff58d9309bc4b77a0f264259e888 HTTP/1.1" 200 14
+2021-01-14 16:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 16:14 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:35139
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session HTTP/1.1" 200 719
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/window/maximize {}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/timeouts {"implicit": 30000}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/timeouts HTTP/1.1" 200 14
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/window/maximize {}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 14
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "GET /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 46
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 14
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "GET /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 46
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 14
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "GET /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 46
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 14
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "GET /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 46
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "POST /session/cdab60e9f2b0e042967b59579098a34b/url HTTP/1.1" 200 14
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:14 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:35139/session/cdab60e9f2b0e042967b59579098a34b {}
+2021-01-14 16:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:35139 "DELETE /session/cdab60e9f2b0e042967b59579098a34b HTTP/1.1" 200 14
+2021-01-14 16:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:17 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 16:17 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 16:17 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:36021
+2021-01-14 16:17 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session HTTP/1.1" 200 721
+2021-01-14 16:17 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:17 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/window/maximize {}
+2021-01-14 16:17 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:17 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:17 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/timeouts {"implicit": 30000}
+2021-01-14 16:17 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/timeouts HTTP/1.1" 200 14
+2021-01-14 16:17 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:17 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/window/maximize {}
+2021-01-14 16:17 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:17 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:17 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 14
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "GET /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 46
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 14
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "GET /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 46
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 14
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "GET /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 46
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 14
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "GET /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 46
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "POST /session/00fe2f564b38a3cc9de0b54e43b38f96/url HTTP/1.1" 200 14
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:18 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:36021/session/00fe2f564b38a3cc9de0b54e43b38f96 {}
+2021-01-14 16:18 connectionpool.py[line:433] DEBUG http://127.0.0.1:36021 "DELETE /session/00fe2f564b38a3cc9de0b54e43b38f96 HTTP/1.1" 200 14
+2021-01-14 16:18 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 16:20 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:36611
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session HTTP/1.1" 200 720
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/window/maximize {}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/timeouts {"implicit": 30000}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/timeouts HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/window/maximize {}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/url HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/url {}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "GET /session/7440bbae53ff21c982f07870a26d6d66/url HTTP/1.1" 200 46
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/url HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/url {}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "GET /session/7440bbae53ff21c982f07870a26d6d66/url HTTP/1.1" 200 46
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/url HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138002
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element/1bc6e9f9-236f-4307-8fd1-73d18dff1163/value {"text": "13800138002", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "2"], "id": "1bc6e9f9-236f-4307-8fd1-73d18dff1163"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element/1bc6e9f9-236f-4307-8fd1-73d18dff1163/value HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138001
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element/c46bb517-cf68-4f0c-bb76-b82a6a1c412b/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "c46bb517-cf68-4f0c-bb76-b82a6a1c412b"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element/c46bb517-cf68-4f0c-bb76-b82a6a1c412b/value HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element/cd37d234-14aa-4f2a-996b-ce56b7024083/click {"id": "cd37d234-14aa-4f2a-996b-ce56b7024083"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element/cd37d234-14aa-4f2a-996b-ce56b7024083/click HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "POST /session/7440bbae53ff21c982f07870a26d6d66/element HTTP/1.1" 200 88
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66/element/402cd090-8e53-4552-9233-a5296a30ba1d/text {"id": "402cd090-8e53-4552-9233-a5296a30ba1d"}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "GET /session/7440bbae53ff21c982f07870a26d6d66/element/402cd090-8e53-4552-9233-a5296a30ba1d/text HTTP/1.1" 200 34
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:20 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:36611/session/7440bbae53ff21c982f07870a26d6d66 {}
+2021-01-14 16:20 connectionpool.py[line:433] DEBUG http://127.0.0.1:36611 "DELETE /session/7440bbae53ff21c982f07870a26d6d66 HTTP/1.1" 200 14
+2021-01-14 16:20 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:31 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 16:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 16:31 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:39335
+2021-01-14 16:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session HTTP/1.1" 200 721
+2021-01-14 16:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/window/maximize {}
+2021-01-14 16:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/timeouts {"implicit": 30000}
+2021-01-14 16:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/timeouts HTTP/1.1" 200 14
+2021-01-14 16:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/window/maximize {}
+2021-01-14 16:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "GET /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 46
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-None
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "GET /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 46
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138002
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/80d332c0-e737-4dd7-a9cd-dce38ccdda1d/value {"text": "13800138002", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "2"], "id": "80d332c0-e737-4dd7-a9cd-dce38ccdda1d"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/80d332c0-e737-4dd7-a9cd-dce38ccdda1d/value HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138001
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/67ff1d58-0fc0-4091-812b-fb052b1614e5/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "67ff1d58-0fc0-4091-812b-fb052b1614e5"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/67ff1d58-0fc0-4091-812b-fb052b1614e5/value HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/bc6966dc-66ae-430f-b8d4-7c1d41aee6a7/click {"id": "bc6966dc-66ae-430f-b8d4-7c1d41aee6a7"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/bc6966dc-66ae-430f-b8d4-7c1d41aee6a7/click HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/44a24d34-5b6d-40e0-9984-9bafb6144689/text {"id": "44a24d34-5b6d-40e0-9984-9bafb6144689"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "GET /session/63cf651e8dc0e079201c715f4569ddd4/element/44a24d34-5b6d-40e0-9984-9bafb6144689/text HTTP/1.1" 200 34
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "GET /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 46
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138001
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/a56c6213-386f-4068-8efe-d555c771b42e/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "a56c6213-386f-4068-8efe-d555c771b42e"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/a56c6213-386f-4068-8efe-d555c771b42e/value HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138003
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/db48a909-1fc2-4139-ba01-db3742d8a7f5/value {"text": "138003", "value": ["1", "3", "8", "0", "0", "3"], "id": "db48a909-1fc2-4139-ba01-db3742d8a7f5"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/db48a909-1fc2-4139-ba01-db3742d8a7f5/value HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/4c2ec191-4283-41c5-985d-17a280460b10/click {"id": "4c2ec191-4283-41c5-985d-17a280460b10"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/4c2ec191-4283-41c5-985d-17a280460b10/click HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/8f41d89e-bb68-4b1e-8c59-133ffc5dffea/text {"id": "8f41d89e-bb68-4b1e-8c59-133ffc5dffea"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "GET /session/63cf651e8dc0e079201c715f4569ddd4/element/8f41d89e-bb68-4b1e-8c59-133ffc5dffea/text HTTP/1.1" 200 72
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "GET /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 46
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/url HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138001
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/26d4b715-b68e-4cf5-8b3a-e17951b87e65/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "26d4b715-b68e-4cf5-8b3a-e17951b87e65"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/26d4b715-b68e-4cf5-8b3a-e17951b87e65/value HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138001
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/62a5feb0-5476-4688-9752-c45d8ad1172e/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "62a5feb0-5476-4688-9752-c45d8ad1172e"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/62a5feb0-5476-4688-9752-c45d8ad1172e/value HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/325011ea-d66c-4288-8741-b4b6b85e2455/click {"id": "325011ea-d66c-4288-8741-b4b6b85e2455"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element/325011ea-d66c-4288-8741-b4b6b85e2455/click HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id="subtitle"]/span_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "POST /session/63cf651e8dc0e079201c715f4569ddd4/element HTTP/1.1" 200 88
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4/element/1b52272a-e103-4753-a1d8-ed69d621c437/text {"id": "1b52272a-e103-4753-a1d8-ed69d621c437"}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "GET /session/63cf651e8dc0e079201c715f4569ddd4/element/1b52272a-e103-4753-a1d8-ed69d621c437/text HTTP/1.1" 200 48
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:32 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:39335/session/63cf651e8dc0e079201c715f4569ddd4 {}
+2021-01-14 16:32 connectionpool.py[line:433] DEBUG http://127.0.0.1:39335 "DELETE /session/63cf651e8dc0e079201c715f4569ddd4 HTTP/1.1" 200 14
+2021-01-14 16:32 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:37 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 16:37 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 16:37 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:40960
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session HTTP/1.1" 200 720
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/window/maximize {}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/timeouts {"implicit": 30000}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/timeouts HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/window/maximize {}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/window/maximize HTTP/1.1" 200 52
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 46
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-                
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/d9f61b12-6770-4106-a41e-8f2f10fe600a/value {"text": "                ", "value": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "], "id": "d9f61b12-6770-4106-a41e-8f2f10fe600a"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/d9f61b12-6770-4106-a41e-8f2f10fe600a/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138002
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/3d2bc332-fafc-4d6f-b528-e37a8264cb68/value {"text": "138002", "value": ["1", "3", "8", "0", "0", "2"], "id": "3d2bc332-fafc-4d6f-b528-e37a8264cb68"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/3d2bc332-fafc-4d6f-b528-e37a8264cb68/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/eaee4172-9ffe-4845-8cd2-3d9a088c7029/click {"id": "eaee4172-9ffe-4845-8cd2-3d9a088c7029"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/eaee4172-9ffe-4845-8cd2-3d9a088c7029/click HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/7cc0a836-b8a9-4158-9008-2fe9683e6840/text {"id": "7cc0a836-b8a9-4158-9008-2fe9683e6840"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/element/7cc0a836-b8a9-4158-9008-2fe9683e6840/text HTTP/1.1" 200 43
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 46
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138002
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/0e95ad79-5306-46d2-97a5-c9ad37651459/value {"text": "13800138002", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "2"], "id": "0e95ad79-5306-46d2-97a5-c9ad37651459"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/0e95ad79-5306-46d2-97a5-c9ad37651459/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138001
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/8735d044-65b9-4928-84cd-52e44295efdc/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "8735d044-65b9-4928-84cd-52e44295efdc"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/8735d044-65b9-4928-84cd-52e44295efdc/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/0ae0a1b5-9c0b-4715-be21-a8af172ac338/click {"id": "0ae0a1b5-9c0b-4715-be21-a8af172ac338"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/0ae0a1b5-9c0b-4715-be21-a8af172ac338/click HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/cc07a499-d421-40db-bc19-9a2d95874f8b/text {"id": "cc07a499-d421-40db-bc19-9a2d95874f8b"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/element/cc07a499-d421-40db-bc19-9a2d95874f8b/text HTTP/1.1" 200 34
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 46
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138001
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/96405bb8-4228-43ae-81ef-040183e7f096/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "96405bb8-4228-43ae-81ef-040183e7f096"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/96405bb8-4228-43ae-81ef-040183e7f096/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138003
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/eaf3aef6-34b1-493b-9dc7-49b1823f5824/value {"text": "138003", "value": ["1", "3", "8", "0", "0", "3"], "id": "eaf3aef6-34b1-493b-9dc7-49b1823f5824"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/eaf3aef6-34b1-493b-9dc7-49b1823f5824/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/185b7a77-d5ce-4820-9b50-c326eeceba83/click {"id": "185b7a77-d5ce-4820-9b50-c326eeceba83"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/185b7a77-d5ce-4820-9b50-c326eeceba83/click HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/p[1]_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/870c800b-6106-4ba9-a3d1-8d4e79a2dc1a/text {"id": "870c800b-6106-4ba9-a3d1-8d4e79a2dc1a"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/element/870c800b-6106-4ba9-a3d1-8d4e79a2dc1a/text HTTP/1.1" 200 72
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 46
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/url HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-inp_定位方法-id_操作方法-send_keys_具体信息-13800138001
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/19a603ce-460a-466e-9a38-85436435ef86/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "19a603ce-460a-466e-9a38-85436435ef86"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/19a603ce-460a-466e-9a38-85436435ef86/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id ="password"]/div/div[1]/input_定位方法-xpath_操作方法-send_keys_具体信息-138001
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/30e73c66-57c5-4f15-afb0-62f51272735c/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "30e73c66-57c5-4f15-afb0-62f51272735c"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/30e73c66-57c5-4f15-afb0-62f51272735c/value HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button_定位方法-xpath_操作方法-click_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/171f3f4c-4be4-4d14-a0de-89e07d1c9a21/click {"id": "171f3f4c-4be4-4d14-a0de-89e07d1c9a21"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element/171f3f4c-4be4-4d14-a0de-89e07d1c9a21/click HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 basepage.py[line:83] INFO test003_登录成功_操作步骤：%s==定位元素-//*[@id="subtitle"]/span_定位方法-xpath_操作方法-get_text_具体信息- 
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element {"using": "xpath", "value": "//*[@id=\"subtitle\"]/span"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "POST /session/4db39c55d56c6624096f8a4d5063cee6/element HTTP/1.1" 200 88
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6/element/58129f06-eef7-4a7e-9f54-c3b739fdc3e7/text {"id": "58129f06-eef7-4a7e-9f54-c3b739fdc3e7"}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "GET /session/4db39c55d56c6624096f8a4d5063cee6/element/58129f06-eef7-4a7e-9f54-c3b739fdc3e7/text HTTP/1.1" 200 48
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 16:38 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:40960/session/4db39c55d56c6624096f8a4d5063cee6 {}
+2021-01-14 16:38 connectionpool.py[line:433] DEBUG http://127.0.0.1:40960 "DELETE /session/4db39c55d56c6624096f8a4d5063cee6 HTTP/1.1" 200 14
+2021-01-14 16:38 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:03 LoggingConf.py[line:37] DEBUG debug message
+2021-01-14 17:03 LoggingConf.py[line:38] INFO info message
+2021-01-14 17:03 LoggingConf.py[line:39] WARNING warning message
+2021-01-14 17:03 LoggingConf.py[line:40] ERROR error message
+2021-01-14 17:03 LoggingConf.py[line:41] CRITICAL critical error message
+2021-01-14 17:43 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 17:43 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56533/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 17:43 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:56533
+2021-01-14 17:43 connectionpool.py[line:433] DEBUG http://127.0.0.1:56533 "POST /session HTTP/1.1" 200 721
+2021-01-14 17:43 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:43 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56533/session/d9a9cd37540351434a6ad76cf2cfac3a/window/maximize {}
+2021-01-14 17:43 connectionpool.py[line:433] DEBUG http://127.0.0.1:56533 "POST /session/d9a9cd37540351434a6ad76cf2cfac3a/window/maximize HTTP/1.1" 200 14
+2021-01-14 17:43 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:43 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56533/session/d9a9cd37540351434a6ad76cf2cfac3a/timeouts {"implicit": 30000}
+2021-01-14 17:43 connectionpool.py[line:433] DEBUG http://127.0.0.1:56533 "POST /session/d9a9cd37540351434a6ad76cf2cfac3a/timeouts HTTP/1.1" 200 14
+2021-01-14 17:43 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:43 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56533/session/d9a9cd37540351434a6ad76cf2cfac3a/window/maximize {}
+2021-01-14 17:43 connectionpool.py[line:433] DEBUG http://127.0.0.1:56533 "POST /session/d9a9cd37540351434a6ad76cf2cfac3a/window/maximize HTTP/1.1" 500 1023
+2021-01-14 17:43 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:56 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 17:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 17:56 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:59752
+2021-01-14 17:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session HTTP/1.1" 200 718
+2021-01-14 17:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/window/maximize {}
+2021-01-14 17:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/window/maximize HTTP/1.1" 200 52
+2021-01-14 17:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/timeouts {"implicit": 30000}
+2021-01-14 17:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/timeouts HTTP/1.1" 200 14
+2021-01-14 17:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/window/maximize {}
+2021-01-14 17:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/window/maximize HTTP/1.1" 200 52
+2021-01-14 17:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/url HTTP/1.1" 200 14
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/url {}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "GET /session/c66d897b8b9460b2374dcaa69bafdfb9/url HTTP/1.1" 200 46
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/url HTTP/1.1" 200 14
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element HTTP/1.1" 200 88
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-                
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element HTTP/1.1" 200 88
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element/40c5d5bf-e3dd-480a-a970-84d03e85c24b/value {"text": "                ", "value": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "], "id": "40c5d5bf-e3dd-480a-a970-84d03e85c24b"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element/40c5d5bf-e3dd-480a-a970-84d03e85c24b/value HTTP/1.1" 200 14
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element HTTP/1.1" 200 88
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138002
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element HTTP/1.1" 200 88
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element/96b477c3-e3af-48a1-9b70-2fb5c7a1b7a4/value {"text": "138002", "value": ["1", "3", "8", "0", "0", "2"], "id": "96b477c3-e3af-48a1-9b70-2fb5c7a1b7a4"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element/96b477c3-e3af-48a1-9b70-2fb5c7a1b7a4/value HTTP/1.1" 200 14
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element HTTP/1.1" 200 88
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element HTTP/1.1" 200 88
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element/e4e7724f-6399-499c-a4f7-1827b159f61a/click {"id": "e4e7724f-6399-499c-a4f7-1827b159f61a"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element/e4e7724f-6399-499c-a4f7-1827b159f61a/click HTTP/1.1" 200 14
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "POST /session/c66d897b8b9460b2374dcaa69bafdfb9/element HTTP/1.1" 500 1023
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/screenshot {}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "GET /session/c66d897b8b9460b2374dcaa69bafdfb9/screenshot HTTP/1.1" 500 1023
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/url {}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "GET /session/c66d897b8b9460b2374dcaa69bafdfb9/url HTTP/1.1" 500 1023
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/url {}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "GET /session/c66d897b8b9460b2374dcaa69bafdfb9/url HTTP/1.1" 500 1023
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9/url {}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "GET /session/c66d897b8b9460b2374dcaa69bafdfb9/url HTTP/1.1" 500 1023
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 17:57 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:59752/session/c66d897b8b9460b2374dcaa69bafdfb9 {}
+2021-01-14 17:57 connectionpool.py[line:433] DEBUG http://127.0.0.1:59752 "DELETE /session/c66d897b8b9460b2374dcaa69bafdfb9 HTTP/1.1" 200 14
+2021-01-14 17:57 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:10 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:63824
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session HTTP/1.1" 200 720
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/window/maximize {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/timeouts {"implicit": 30000}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/timeouts HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/window/maximize {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 46
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-                
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/970737a5-3f8a-4567-85ac-3fe060456c70/value {"text": "                ", "value": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "], "id": "970737a5-3f8a-4567-85ac-3fe060456c70"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/970737a5-3f8a-4567-85ac-3fe060456c70/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138002
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/0edf3fcf-1c82-41a9-af51-ec2f422223cb/value {"text": "138002", "value": ["1", "3", "8", "0", "0", "2"], "id": "0edf3fcf-1c82-41a9-af51-ec2f422223cb"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/0edf3fcf-1c82-41a9-af51-ec2f422223cb/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/840f2786-98ea-4791-9bac-a810fce4ca22/click {"id": "840f2786-98ea-4791-9bac-a810fce4ca22"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/840f2786-98ea-4791-9bac-a810fce4ca22/click HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/p[1]__定位方式-xpath__操作方法-get_text__具体信息- 
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/3df0d352-049b-431e-a718-18d8fb420c57/text {"id": "3df0d352-049b-431e-a718-18d8fb420c57"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/element/3df0d352-049b-431e-a718-18d8fb420c57/text HTTP/1.1" 200 43
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 46
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138002
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/3ea57d32-cc11-410a-b4b1-ab3e736b7452/value {"text": "13800138002", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "2"], "id": "3ea57d32-cc11-410a-b4b1-ab3e736b7452"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/3ea57d32-cc11-410a-b4b1-ab3e736b7452/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138001
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/f4f9adbe-417f-4217-909f-c36adb46504d/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "f4f9adbe-417f-4217-909f-c36adb46504d"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/f4f9adbe-417f-4217-909f-c36adb46504d/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/1c41f83c-f3dc-4a6d-a0df-a759289d006e/click {"id": "1c41f83c-f3dc-4a6d-a0df-a759289d006e"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/1c41f83c-f3dc-4a6d-a0df-a759289d006e/click HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/p[1]__定位方式-xpath__操作方法-get_text__具体信息- 
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/041452e7-94ba-4441-8325-ce9d63269b92/text {"id": "041452e7-94ba-4441-8325-ce9d63269b92"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/element/041452e7-94ba-4441-8325-ce9d63269b92/text HTTP/1.1" 200 34
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 46
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138001
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/4b86715c-0a40-44f2-95ac-891715edd608/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "4b86715c-0a40-44f2-95ac-891715edd608"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/4b86715c-0a40-44f2-95ac-891715edd608/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138003
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/bc499c32-7ea3-470a-a2cf-3c1ffdc1d589/value {"text": "138003", "value": ["1", "3", "8", "0", "0", "3"], "id": "bc499c32-7ea3-470a-a2cf-3c1ffdc1d589"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/bc499c32-7ea3-470a-a2cf-3c1ffdc1d589/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/29eceb7c-474e-4300-8494-17e2b4d7b32b/click {"id": "29eceb7c-474e-4300-8494-17e2b4d7b32b"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/29eceb7c-474e-4300-8494-17e2b4d7b32b/click HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test003_登录失败，密码错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/p[1]__定位方式-xpath__操作方法-get_text__具体信息- 
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/fc061614-e61a-4f6b-9480-d3335eea62a0/text {"id": "fc061614-e61a-4f6b-9480-d3335eea62a0"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/element/fc061614-e61a-4f6b-9480-d3335eea62a0/text HTTP/1.1" 200 72
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 46
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/url HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test003_登录成功_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138001
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/f8a51935-5d6b-4b34-8392-568d81e4a9d4/value {"text": "13800138001", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "1"], "id": "f8a51935-5d6b-4b34-8392-568d81e4a9d4"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/f8a51935-5d6b-4b34-8392-568d81e4a9d4/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 basepage.py[line:83] INFO test003_登录成功_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138001
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 200 88
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element/f373c1d3-42de-48d4-863e-a159982e668d/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "f373c1d3-42de-48d4-863e-a159982e668d"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element/f373c1d3-42de-48d4-863e-a159982e668d/value HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "POST /session/88108e980c4d79a889bc5df87a46a9ee/element HTTP/1.1" 500 1023
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee/screenshot {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "GET /session/88108e980c4d79a889bc5df87a46a9ee/screenshot HTTP/1.1" 500 1023
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:10 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:63824/session/88108e980c4d79a889bc5df87a46a9ee {}
+2021-01-14 18:10 connectionpool.py[line:433] DEBUG http://127.0.0.1:63824 "DELETE /session/88108e980c4d79a889bc5df87a46a9ee HTTP/1.1" 200 14
+2021-01-14 18:10 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:11 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:11 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:64293/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:11 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:64293
+2021-01-14 18:11 connectionpool.py[line:433] DEBUG http://127.0.0.1:64293 "POST /session HTTP/1.1" 500 1080
+2021-01-14 18:11 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:11 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 18:12 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:64635/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:12 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:64635
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "POST /session HTTP/1.1" 200 720
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/window/maximize {}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "POST /session/57c4491f6956235ec8ebc33316e74e4f/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/timeouts {"implicit": 30000}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "POST /session/57c4491f6956235ec8ebc33316e74e4f/timeouts HTTP/1.1" 200 14
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/window/maximize {}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "POST /session/57c4491f6956235ec8ebc33316e74e4f/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "POST /session/57c4491f6956235ec8ebc33316e74e4f/url HTTP/1.1" 200 14
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/url {}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "GET /session/57c4491f6956235ec8ebc33316e74e4f/url HTTP/1.1" 404 985
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/url {}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "GET /session/57c4491f6956235ec8ebc33316e74e4f/url HTTP/1.1" 404 985
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/url {}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "GET /session/57c4491f6956235ec8ebc33316e74e4f/url HTTP/1.1" 404 985
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f/url {}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "GET /session/57c4491f6956235ec8ebc33316e74e4f/url HTTP/1.1" 404 985
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:12 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:64635/session/57c4491f6956235ec8ebc33316e74e4f {}
+2021-01-14 18:12 connectionpool.py[line:433] DEBUG http://127.0.0.1:64635 "DELETE /session/57c4491f6956235ec8ebc33316e74e4f HTTP/1.1" 200 14
+2021-01-14 18:12 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:13 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:13 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:64803/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:13 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:64803
+2021-01-14 18:13 connectionpool.py[line:433] DEBUG http://127.0.0.1:64803 "POST /session HTTP/1.1" 500 1080
+2021-01-14 18:13 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:13 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 18:25 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:3522/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:25 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:3522
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "POST /session HTTP/1.1" 200 720
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/window/maximize {}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "POST /session/81986a6880800f17652d8b64add1904c/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/timeouts {"implicit": 30000}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "POST /session/81986a6880800f17652d8b64add1904c/timeouts HTTP/1.1" 200 14
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/window/maximize {}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "POST /session/81986a6880800f17652d8b64add1904c/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "POST /session/81986a6880800f17652d8b64add1904c/url HTTP/1.1" 200 14
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/url {}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "GET /session/81986a6880800f17652d8b64add1904c/url HTTP/1.1" 404 985
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/url {}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "GET /session/81986a6880800f17652d8b64add1904c/url HTTP/1.1" 404 985
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/url {}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "GET /session/81986a6880800f17652d8b64add1904c/url HTTP/1.1" 404 985
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c/url {}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "GET /session/81986a6880800f17652d8b64add1904c/url HTTP/1.1" 404 985
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:25 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:3522/session/81986a6880800f17652d8b64add1904c {}
+2021-01-14 18:25 connectionpool.py[line:433] DEBUG http://127.0.0.1:3522 "DELETE /session/81986a6880800f17652d8b64add1904c HTTP/1.1" 200 14
+2021-01-14 18:25 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4180/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:28 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:4180
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "POST /session HTTP/1.1" 200 718
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/window/maximize {}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "POST /session/7d4a7e1c7e61610780a9450c8467c082/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/timeouts {"implicit": 30000}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "POST /session/7d4a7e1c7e61610780a9450c8467c082/timeouts HTTP/1.1" 200 14
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/window/maximize {}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "POST /session/7d4a7e1c7e61610780a9450c8467c082/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "POST /session/7d4a7e1c7e61610780a9450c8467c082/url HTTP/1.1" 200 14
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/url {}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "GET /session/7d4a7e1c7e61610780a9450c8467c082/url HTTP/1.1" 404 985
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/url {}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "GET /session/7d4a7e1c7e61610780a9450c8467c082/url HTTP/1.1" 404 985
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/url {}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "GET /session/7d4a7e1c7e61610780a9450c8467c082/url HTTP/1.1" 404 985
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082/url {}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "GET /session/7d4a7e1c7e61610780a9450c8467c082/url HTTP/1.1" 404 985
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:28 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:4180/session/7d4a7e1c7e61610780a9450c8467c082 {}
+2021-01-14 18:28 connectionpool.py[line:433] DEBUG http://127.0.0.1:4180 "DELETE /session/7d4a7e1c7e61610780a9450c8467c082 HTTP/1.1" 200 14
+2021-01-14 18:28 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:29 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:29 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4585/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:29 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:4585
+2021-01-14 18:29 connectionpool.py[line:433] DEBUG http://127.0.0.1:4585 "POST /session HTTP/1.1" 500 1080
+2021-01-14 18:29 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:29 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 18:30 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4669/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:30 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:4669
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "POST /session HTTP/1.1" 200 720
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/window/maximize {}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "POST /session/25f99123cf64af12ab04054880ab312a/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/timeouts {"implicit": 30000}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "POST /session/25f99123cf64af12ab04054880ab312a/timeouts HTTP/1.1" 200 14
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/window/maximize {}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "POST /session/25f99123cf64af12ab04054880ab312a/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "POST /session/25f99123cf64af12ab04054880ab312a/url HTTP/1.1" 200 14
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/url {}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "GET /session/25f99123cf64af12ab04054880ab312a/url HTTP/1.1" 500 1023
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/url {}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "GET /session/25f99123cf64af12ab04054880ab312a/url HTTP/1.1" 500 1023
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/url {}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "GET /session/25f99123cf64af12ab04054880ab312a/url HTTP/1.1" 500 1023
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a/url {}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "GET /session/25f99123cf64af12ab04054880ab312a/url HTTP/1.1" 500 1023
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:4669/session/25f99123cf64af12ab04054880ab312a {}
+2021-01-14 18:30 connectionpool.py[line:433] DEBUG http://127.0.0.1:4669 "DELETE /session/25f99123cf64af12ab04054880ab312a HTTP/1.1" 200 14
+2021-01-14 18:30 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:30 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:30 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 18:31 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5069/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:31 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:5069
+2021-01-14 18:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:5069 "POST /session HTTP/1.1" 200 718
+2021-01-14 18:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5069/session/44e5261d5089f6329fc20a20d1627a8b/window/maximize {}
+2021-01-14 18:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:5069 "POST /session/44e5261d5089f6329fc20a20d1627a8b/window/maximize HTTP/1.1" 200 14
+2021-01-14 18:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5069/session/44e5261d5089f6329fc20a20d1627a8b/timeouts {"implicit": 30000}
+2021-01-14 18:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:5069 "POST /session/44e5261d5089f6329fc20a20d1627a8b/timeouts HTTP/1.1" 200 14
+2021-01-14 18:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5069/session/44e5261d5089f6329fc20a20d1627a8b/window/maximize {}
+2021-01-14 18:31 connectionpool.py[line:433] DEBUG http://127.0.0.1:5069 "POST /session/44e5261d5089f6329fc20a20d1627a8b/window/maximize HTTP/1.1" 500 1023
+2021-01-14 18:31 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 18:56 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:10858
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session HTTP/1.1" 200 721
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/window/maximize {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/timeouts {"implicit": 30000}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/timeouts HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/window/maximize {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/window/maximize HTTP/1.1" 200 52
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/url {"url": "https://iparking.ibotech.com.cn"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/url HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/url {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "GET /session/8a5c24446e54399883cc109bc7c43ab4/url HTTP/1.1" 200 46
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/url HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-                
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element/465841d6-46de-4460-a0f3-35eb02b36718/value {"text": "                ", "value": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "], "id": "465841d6-46de-4460-a0f3-35eb02b36718"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element/465841d6-46de-4460-a0f3-35eb02b36718/value HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138002
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element/bd92a237-d431-4abe-bf4b-e80f832a79b8/value {"text": "138002", "value": ["1", "3", "8", "0", "0", "2"], "id": "bd92a237-d431-4abe-bf4b-e80f832a79b8"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element/bd92a237-d431-4abe-bf4b-e80f832a79b8/value HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element/c2e102cb-acad-4f5f-a52d-8e3f8d469cfb/click {"id": "c2e102cb-acad-4f5f-a52d-8e3f8d469cfb"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element/c2e102cb-acad-4f5f-a52d-8e3f8d469cfb/click HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 basepage.py[line:83] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/p[1]__定位方式-xpath__操作方法-get_text__具体信息- 
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element/16c72741-677a-4dc4-a556-f9808661446f/text {"id": "16c72741-677a-4dc4-a556-f9808661446f"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "GET /session/8a5c24446e54399883cc109bc7c43ab4/element/16c72741-677a-4dc4-a556-f9808661446f/text HTTP/1.1" 200 43
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/url {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "GET /session/8a5c24446e54399883cc109bc7c43ab4/url HTTP/1.1" 200 46
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/url {"url": "https://iparking.ibotech.com.cn/#/"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/url HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138002
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "css selector", "value": "[id=\"inp\"]"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element/0b91a19f-6768-46bb-9f4a-8b851a94b234/value {"text": "13800138002", "value": ["1", "3", "8", "0", "0", "1", "3", "8", "0", "0", "2"], "id": "0b91a19f-6768-46bb-9f4a-8b851a94b234"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element/0b91a19f-6768-46bb-9f4a-8b851a94b234/value HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138001
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id =\"password\"]/div/div[1]/input"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element/74be16d8-cb48-47ea-87c6-f9ba8aad5aee/value {"text": "138001", "value": ["1", "3", "8", "0", "0", "1"], "id": "74be16d8-cb48-47ea-87c6-f9ba8aad5aee"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element/74be16d8-cb48-47ea-87c6-f9ba8aad5aee/value HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 basepage.py[line:83] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/div[4]/div/button"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 200 88
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element/3c5b81bd-ec05-4369-962c-3b2e7ea14e5e/click {"id": "3c5b81bd-ec05-4369-962c-3b2e7ea14e5e"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element/3c5b81bd-ec05-4369-962c-3b2e7ea14e5e/click HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/element {"using": "xpath", "value": "//*[@id=\"app\"]/div/div[1]/form/p[1]"}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "POST /session/8a5c24446e54399883cc109bc7c43ab4/element HTTP/1.1" 404 985
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/screenshot {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "GET /session/8a5c24446e54399883cc109bc7c43ab4/screenshot HTTP/1.1" 404 985
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/url {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "GET /session/8a5c24446e54399883cc109bc7c43ab4/url HTTP/1.1" 404 985
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4/url {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "GET /session/8a5c24446e54399883cc109bc7c43ab4/url HTTP/1.1" 404 985
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:56 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:10858/session/8a5c24446e54399883cc109bc7c43ab4 {}
+2021-01-14 18:56 connectionpool.py[line:433] DEBUG http://127.0.0.1:10858 "DELETE /session/8a5c24446e54399883cc109bc7c43ab4 HTTP/1.1" 200 14
+2021-01-14 18:56 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 18:59 LoggingConf.py[line:61] DEBUG debug message
+2021-01-14 18:59 LoggingConf.py[line:62] INFO info message
+2021-01-14 18:59 LoggingConf.py[line:63] WARNING warning message
+2021-01-14 18:59 LoggingConf.py[line:64] ERROR error message
+2021-01-14 18:59 LoggingConf.py[line:65] CRITICAL critical error message
+2021-01-14 19:00 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 19:00 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 19:02 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 19:06 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 19:06 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 19:08 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 19:08 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:14413/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 19:08 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:14413
+2021-01-14 19:08 connectionpool.py[line:433] DEBUG http://127.0.0.1:14413 "POST /session HTTP/1.1" 200 720
+2021-01-14 19:08 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:08 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:14413/session/ba0f54d2fa23dc3fa18948091b859a3a/window/maximize {}
+2021-01-14 19:08 connectionpool.py[line:433] DEBUG http://127.0.0.1:14413 "POST /session/ba0f54d2fa23dc3fa18948091b859a3a/window/maximize HTTP/1.1" 200 52
+2021-01-14 19:08 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:08 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:14413/session/ba0f54d2fa23dc3fa18948091b859a3a/timeouts {"implicit": 30000}
+2021-01-14 19:08 connectionpool.py[line:433] DEBUG http://127.0.0.1:14413 "POST /session/ba0f54d2fa23dc3fa18948091b859a3a/timeouts HTTP/1.1" 200 14
+2021-01-14 19:08 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:09 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 19:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:14560/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 19:09 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:14560
+2021-01-14 19:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:14560 "POST /session HTTP/1.1" 200 720
+2021-01-14 19:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:14560/session/785dee1ea022e0d1fdf97c0096acd652/window/maximize {}
+2021-01-14 19:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:14560 "POST /session/785dee1ea022e0d1fdf97c0096acd652/window/maximize HTTP/1.1" 200 14
+2021-01-14 19:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:09 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:14560/session/785dee1ea022e0d1fdf97c0096acd652/timeouts {"implicit": 30000}
+2021-01-14 19:09 connectionpool.py[line:433] DEBUG http://127.0.0.1:14560 "POST /session/785dee1ea022e0d1fdf97c0096acd652/timeouts HTTP/1.1" 200 14
+2021-01-14 19:09 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:09 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 19:10 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 19:10 Webdrivers.py[line:20] INFO 启动浏览器为：Chrome
+2021-01-14 19:10 Webdrivers.py[line:40] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 19:13 Webdrivers.py[line:22] INFO 启动浏览器为：Chrome
+2021-01-14 19:13 Webdrivers.py[line:42] ERROR 启动浏览器出现异常：Message: session not created
+from chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+
+2021-01-14 19:14 Webdrivers.py[line:22] INFO 启动浏览器为：Chrome
+2021-01-14 19:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:15916/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 19:14 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:15916
+2021-01-14 19:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:15916 "POST /session HTTP/1.1" 200 720
+2021-01-14 19:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:15916/session/3b2142a433e89d8392e972b86228722a/window/maximize {}
+2021-01-14 19:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:15916 "POST /session/3b2142a433e89d8392e972b86228722a/window/maximize HTTP/1.1" 200 52
+2021-01-14 19:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:15916/session/3b2142a433e89d8392e972b86228722a/timeouts {"implicit": 30000}
+2021-01-14 19:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:15916 "POST /session/3b2142a433e89d8392e972b86228722a/timeouts HTTP/1.1" 200 14
+2021-01-14 19:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:14 Webdrivers.py[line:22] INFO 启动浏览器为：Chrome
+2021-01-14 19:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:16098/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-14 19:14 connectionpool.py[line:226] DEBUG Starting new HTTP connection (1): 127.0.0.1:16098
+2021-01-14 19:14 connectionpool.py[line:433] DEBUG http://127.0.0.1:16098 "POST /session HTTP/1.1" 200 721
+2021-01-14 19:14 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:14 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:16098/session/5feb4850ae9b2666c3c70978f7d57bae/window/maximize {}
+2021-01-14 19:15 connectionpool.py[line:433] DEBUG http://127.0.0.1:16098 "POST /session/5feb4850ae9b2666c3c70978f7d57bae/window/maximize HTTP/1.1" 200 52
+2021-01-14 19:15 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:15 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:16098/session/5feb4850ae9b2666c3c70978f7d57bae/timeouts {"implicit": 30000}
+2021-01-14 19:15 connectionpool.py[line:433] DEBUG http://127.0.0.1:16098 "POST /session/5feb4850ae9b2666c3c70978f7d57bae/timeouts HTTP/1.1" 200 14
+2021-01-14 19:15 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-14 19:15 Webdrivers.py[line:22] INFO 启动浏览器为：Chrome
+2021-01-14 19:15 basepage.py[line:85] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-                
+2021-01-14 19:15 basepage.py[line:85] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138002
+2021-01-14 19:15 basepage.py[line:85] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 19:15 basepage.py[line:85] INFO test001_登录失败，账号密码为空_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/p[1]__定位方式-xpath__操作方法-get_text__具体信息- 
+2021-01-14 19:15 basepage.py[line:85] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138002
+2021-01-14 19:15 basepage.py[line:85] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138001
+2021-01-14 19:15 basepage.py[line:85] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 19:15 basepage.py[line:85] INFO test002_登录失败，用户名错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/p[1]__定位方式-xpath__操作方法-get_text__具体信息- 
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录失败，密码错误_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138001
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录失败，密码错误_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138003
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录失败，密码错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录失败，密码错误_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/p[1]__定位方式-xpath__操作方法-get_text__具体信息- 
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录成功_操作步骤：==定位元素-inp__定位方式-id__操作方法-send_keys__具体信息-13800138001
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录成功_操作步骤：==定位元素-//*[@id ="password"]/div/div[1]/input__定位方式-xpath__操作方法-send_keys__具体信息-138001
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录成功_操作步骤：==定位元素-//*[@id="app"]/div/div[1]/form/div[4]/div/button__定位方式-xpath__操作方法-click__具体信息- 
+2021-01-14 19:15 basepage.py[line:85] INFO test003_登录成功_操作步骤：==定位元素-//*[@id="subtitle"]/span__定位方式-xpath__操作方法-get_text__具体信息- 

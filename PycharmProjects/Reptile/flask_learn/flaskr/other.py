@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 import os,time
 from werkzeug.utils import secure_filename
 import math
-from flaskr import cache
+# from flaskr import cache
 import re
 import redis
 import svgwrite
